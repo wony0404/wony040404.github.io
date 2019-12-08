@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<div lang="en">
+
+<head>
+    <!-- Redirect to error page if no javascript -->
+    <noscript><meta http-equiv="refresh" content="0;url=noscript.html"></noscript>
+
+    <!-- meta set -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- css set -->
+    <link rel="stylesheet" href="style.css?v=0.1.4" />
+
+    <!-- title -->
+    <title>Jai Hyun Park</title>
+    
+</head>
+
+<!-- <body style='cursor:url("data/cursor.png"), auto'> -->
+<body>
+
+    <div class='menubar'></div>
+
+    <!-- header -->
+    <header class="_track" id='header' style='background-image:url(data/20180922_183635-min.jpg)'>
+        <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
+
+        <div class='_profile'>
+            <div>
+                <!-- <img src = "data/profile-picture.png" style="width:100%;position:relative;margin:auto"/> -->
+                POSTS
+            </div>
+            <p>
+                Sorry, I do not have any post yet.
+            </p>
+        </div>
+
+        <div class="_see-more">
+            <div>
+                See more details!
+            </div>
+            <img src = 'data/arrow-down.png'/>
+        </div>
+    </header>
+
+    
+    <!-- contents -->
+    <div class="_contents">
+
+        <!-- navigation -->
+        <nav class="_nav-bar _navbar-collapse __nav-default">
+            <div class="_toggle"></div>
+            
+            <ul class="_nav-menu">
+            </ul>
+    
+            <div class="_toggle2"></div>
+        </nav>
+    
+
+    
+    </div>
+
+
+    <!-- footer -->
+    <footer class="_track" style='background-image:url(data/20180922_183635-min.jpg)'>
+        <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
+
+        <div class='_footer-line'>
+            <a href='mailto:jhyunp@snu.ac.kr'>jhyunp@snu.ac.kr</a>
+            <p>
+                This is the beta version of my resume page.<br>
+                You can see the codes on my github.
+            </p>
+        </div>
+
+        <div class="_goto-top"><img src='data/arrow-up.png'/></div>
+    </footer>
+
+
+    <!-- javascript -->
+    <script>
+        var theme_color = '200,255,200';
+        var section_name = 'POSTS';
+    </script>
+    <script src="jquery.js"></script>
+    <script src="javascript.js?v=0.1.4"></script>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+
+    <!-- <img id="mycursor1" style="position:absolute;top:0;left:0;z-index:999;" src="data/cursor.png">
+    <img id="mycursor2" style="position:absolute;top:0;left:0;z-index:998;" src="data/cursor.png">
+    <img id="mycursor3" style="position:absolute;top:0;left:0;z-index:997;" src="data/cursor.png">
+    <img id="mycursor4" style="position:absolute;top:0;left:0;z-index:996;" src="data/cursor.png">
+    <img id="mycursor5" style="position:absolute;top:0;left:0;z-index:995;" src="data/cursor.png">
+    <script type="text/javascript">
+        var mouseX = 0;
+        var mouseY = 0; 
+     
+        function getMousePosition(e){
+            var eObj = window.event? window.event : e;
+            mouseX = eObj.clientX;
+            mouseY = eObj.clientY + document.documentElement.scrollTop;
+        }
+     
+        function moveImg(){
+            var m_x1 = parseInt(document.getElementById('mycursor1').style.left.replace('px', ''));
+            var m_y1 = parseInt(document.getElementById('mycursor1').style.top.replace('px', ''));
+            var m_x2 = parseInt(document.getElementById('mycursor2').style.left.replace('px', ''));
+            var m_y2 = parseInt(document.getElementById('mycursor2').style.top.replace('px', ''));
+            var m_x3 = parseInt(document.getElementById('mycursor3').style.left.replace('px', ''));
+            var m_y3 = parseInt(document.getElementById('mycursor3').style.top.replace('px', ''));
+            var m_x4 = parseInt(document.getElementById('mycursor4').style.left.replace('px', ''));
+            var m_y4 = parseInt(document.getElementById('mycursor4').style.top.replace('px', ''));
+            var m_x5 = parseInt(document.getElementById('mycursor5').style.left.replace('px', ''));
+            var m_y5 = parseInt(document.getElementById('mycursor5').style.top.replace('px', ''));
+
+            document.getElementById('mycursor1').style.left = Math.round(m_x1 + ((mouseX - m_x1) / 3)) + 'px';
+            document.getElementById('mycursor1').style.top = Math.round(m_y1 + ((mouseY - m_y1) / 3)) + 'px';
+
+            document.getElementById('mycursor2').style.left = Math.round(m_x2 + ((m_x1 - m_x2) / 3)) + 'px';
+            document.getElementById('mycursor2').style.top = Math.round(m_y2 + ((m_y1 - m_y2) / 3)) + 'px';
+
+            document.getElementById('mycursor3').style.left = Math.round(m_x3 + ((m_x2 - m_x3) / 3)) + 'px';
+            document.getElementById('mycursor3').style.top = Math.round(m_y3 + ((m_y2 - m_y3) / 3)) + 'px';
+
+            document.getElementById('mycursor4').style.left = Math.round(m_x4 + ((m_x3 - m_x4) / 3)) + 'px';
+            document.getElementById('mycursor4').style.top = Math.round(m_y4 + ((m_y3 - m_y4) / 3)) + 'px';
+
+            document.getElementById('mycursor5').style.left = Math.round(m_x5 + ((m_x4 - m_x5) / 3)) + 'px';
+            document.getElementById('mycursor5').style.top = Math.round(m_y5 + ((m_y4 - m_y5) / 3)) + 'px';
+        }
+     
+        document.onmousemove = getMousePosition;
+        setInterval("moveImg()", 50);
+     
+    </script> -->
+    
+    
+</body>
