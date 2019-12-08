@@ -233,6 +233,7 @@ function applyMenubar(){
 	});
 }
 function applyFooter(){
+	var last_modified = document.lastModified
 	$('footer').html(
 		"\
         <div class='_overlay' style='background-color: rgba(24,24,30, 0.8)'></div>\
@@ -241,8 +242,10 @@ function applyFooter(){
             <p>\
                 This is the beta version of my resume page.<br>\
                 You can see the codes on my github.\
-            </p>\
-        </div>\
+			</p>\
+			<p>last modified:"
+		+ document.lastModified
+		+ "</div>\
         <div class='_goto-top'><img src='data/arrow-up.png'/></div>\
 		"
 	);
