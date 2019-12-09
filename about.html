@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en" style='display:none'>
 
 <head>
-    <!-- Redirect to error page if no javascript -->
     <noscript><meta http-equiv="refresh" content="0;url=noscript.html"></noscript>
+    <script async src='manage-version.js'></script>
 
     <!-- meta set -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- css set -->
-    <link rel="stylesheet" href="style.css?v=0.1.5" />
-
     <!-- title -->
     <title>Jai Hyun Park</title>
-    
+
 </head>
 <body>
     <div class='menubar'></div>
@@ -28,9 +25,9 @@
                 ABOUT
             </div>
             <p>
-                Hi, I'm <b style='font-size:40pt'>Jai Hyun Park</b>.
+                Hi, I'm <b style='font-size:30pt'>Jai Hyun Park</b>.
                 I live in <b style='font-size:22pt'>Seoul</b>, Republic of Korea.
-                I love spending time on <b>playing piano</b>, <b>programming</b>, and <b style='font-size:28pt'>goofing around</b>.
+                I love spending time on <b>playing piano</b>, <b>programming</b>, and <b style='font-size:25pt'>goofing around</b>.
                 My favorite movie is 'Eternal Sunshine of the Spotless Mind'.
             </p>
         </div>
@@ -97,6 +94,7 @@
 
         <section class="_track _content-section _article-section" id = "trivia">
             <div class='flex-block'>
+                <!-- http://jaihyunp.github.io/ -->
                 <img src='data/1530031945830.jpg' style='max-width:400px;width:50%;margin:0px 120px;margin-bottom:50px'/>
 
                 <div class='narrow-piece'>
@@ -149,8 +147,7 @@
                 <div>
                     <h1>My Recent Life</h1>
                     <p>
-                        These days, I spend most of my time on studying mathematics, research, and constructing my personal webpage.
-                        <a href='http://jaihyunp.github.io/'><img src='data/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;display:inline-block'/></a>
+                        These days, I spend most of my time on studying mathematics, research, and constructing my personal webpage.<a href='http://jaihyunp.github.io/'><img src='data/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;display:inline-block'/></a>
 
                     </p>
                 </div>
@@ -212,7 +209,7 @@
         <section class="_track _content-section _article-section" id = "upcoming-events">
             <h1>Upcoming Events</h1>
             <hr>
-            <div>
+            <div class = 'big-piece'>
                 <ul class='grid-3-1-ul schedule-ul'>
                     <li>
                         <h1>Commencement</h1>
@@ -225,7 +222,7 @@
                         <p>SNU | 2020.3.</p>
                     </li>
                     <li>
-                        <h1>...</h1>
+                        <h1>..</h1>
                     </li>
                 </ul>
 
@@ -235,7 +232,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="_track" style='background-image:url(data/20180629_143535-min.jpg)'>
+    <footer class="_track" style='background-image:url(data/20180629_143535-min.jpg)' id='footer'>
     </footer>
     
     
@@ -245,8 +242,25 @@
         var section_name = 'ABOUT'
     </script>
     <script src="jquery.js"></script>
-    <script src="javascript.js?v=0.1.5"></script>
-    <script data-cfasync="false" src="form-submission-handler.js"></script>
         
 </body>
     
+
+
+<!-- <script src="jquery.lazy.min.js"></script>
+    <script>
+        // $('img').lazyload();
+        $('img').Lazy({
+            // scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            effectTime:2000,
+            threshold:10,
+            visibleOnly:false,
+            onError: function(e) {
+                alert("Error");
+            },
+            onFinishedAll: function(e){
+                alert("done");
+            }
+        });
+    </script> -->

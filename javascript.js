@@ -1,4 +1,3 @@
-
 $(document).ready(function()
 {	    
 	applyMenubar();
@@ -7,15 +6,15 @@ $(document).ready(function()
 
 	mobile();
 	heightNavigation();
+	resizeHeightNavigation();
 	scrollSpy();
-	// randomSentence();
 	
 	$(window).on('scroll', function(){
-		scrollSpy();
+		scrollSpy();W
     });
 
 	$(window).on('resize', function(){
-		heightNavigation();
+		resizeHeightNavigation();
 		scrollSpy();
 		$('.right-menu-dropmenu').hide();
 	});
@@ -29,7 +28,6 @@ $(document).ready(function()
 		}, 100);
 	}
 
-
 	$('header ._profile div').css('color', 'rgb(' + theme_color + ')');
 	var count = 0;
 	$('._content-section').each(function(){
@@ -38,15 +36,16 @@ $(document).ready(function()
 			if(count == 0){
 				$(this).css('background-color', 'rgba(' + theme_color + ',0.4)');
 			} else {
-				// $(this).css('background-color', 'rgba(' + theme_color + ',0)');
 				$(this).css('background-color', 'white');
 			}
 		}
 		count = 1 - count;
 	});
-
 });
 
+$(window).load(function(){
+	$('html').css('display', 'block');
+});
 
 function applyClickEvent()
 {
@@ -160,7 +159,6 @@ function scrollSpy()
 		activeSection = tmpActiveSection;
 	}
 
-
 	//Stick navigation
 	if($(window).scrollTop() + 65 < $('header').height()) { //85=(5+45)+40
 		$("._nav-bar").addClass('_nav-bar-collapse');
@@ -180,8 +178,7 @@ function scrollSpy()
 }
 
 function mobile() {
-	
-	if($(window).width() < 1000 && $('._nav-bar ._nav-menu').is(":visible")) {
+	if($(window).width() < 1000 && $('._nav-bar ._nav-menu').length) {
 		$('._nav-bar ._toggle').text($('._nav-bar ._nav-menu ._active').text());
 		$('._nav-bar ._toggle').css("opacity", "1");
 		$('._nav-bar ._toggle2').css("opacity", "1");
@@ -189,7 +186,7 @@ function mobile() {
 	}
 }
 
-function heightNavigation()
+function resizeHeightNavigation()
 {
 	var count = 0;
 	$('._nav-bar ._nav-menu li').each(function(){
@@ -203,52 +200,19 @@ function heightNavigation()
 		});
 	});
 }
-
-
-
-function applyMenubar(){
-	$('.menubar').html(
-		"\
-        <div class='left-menu'><a href='index.html'><img src = 'data/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>\
-        <div class='right-menu'>\
-            <img src='data/rightmenu-button.png' class='right-menu-button'/>\
-            <div class='right-menu-dropmenu'>\
-                <div><a href='about.html'>ABOUT</a></div>\
-                <div><a href='resume.html'>RESUME</a></div>\
-                <div><a href='posts.html'>POSTS</a></div>\
-                <div><a href='contact.html'>CONTACT</a></div>\
-            </div>\
-            <div class='right-menu-menu'>\
-                <div><a href='about.html'>ABOUT</a></div>\
-                <div><a href='resume.html'>RESUME</a></div>\
-                <div><a href='posts.html'>POSTS</a></div>\
-                <div><a href='contact.html'>CONTACT</a></div>\
-            </div>\
-        </div>\
-		"
-	);
-	$('.right-menu a').each(function(){
-		if($(this).text() === section_name)
-			$(this).addClass('this-page');
+function heightNavigation()
+{
+	var windowHeight = $(window).height();
+	$('header').each(function(){
+		$(this).css({
+			'min-height': (windowHeight) + 'px'
+		});
 	});
-}
-function applyFooter(){
-	var last_modified = document.lastModified
-	$('footer').html(
-		"\
-        <div class='_overlay' style='background-color: rgba(24,24,30, 0.8)'></div>\
-        <div class='_footer-line'>\
-            <a href='mailto:jhyunp@snu.ac.kr'>jhyunp@snu.ac.kr</a>\
-            <p>\
-                This is the beta version of my resume page.<br>\
-                You can see the codes on my github.\
-			</p>\
-			<p>last modified:"
-		+ document.lastModified
-		+ "</div>\
-        <div class='_goto-top'><img src='data/arrow-up.png'/></div>\
-		"
-	);
+	$('._thumbnail').each(function(){
+		$(this).css({
+			'min-height': (windowHeight) + 'px'
+		});
+	});
 }
 
 
