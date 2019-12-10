@@ -4,7 +4,6 @@
 
 <head>
     <noscript><meta http-equiv="refresh" content="0;url=noscript.html"></noscript>
-    <script async src='js/manage-version.js'></script>
 
     <!-- meta set -->
     <meta charset="utf-8" />
@@ -18,11 +17,11 @@
     <div class='menubar'></div>
 
     <!-- header -->
-    <header class="_track" id='header' style='background-image:url(assets/imgs/20180629_143535-min.jpg)'>
+    <header class="_track tall-header" id='header' style='background-image:url(assets/imgs/20180629_143535-min.jpg)'>
         <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
 
         <div class='_profile'>
-            <div>
+            <div style='color:rgb(255,255,164)'>
                 ABOUT
             </div>
             <p>
@@ -42,17 +41,7 @@
     </div>
 
     <div class='_contents'>
-        <nav class="_nav-bar _navbar-collapse __nav-default">
-            <!-- <div class="_toggle"></div>
-            
-            <ul class="_nav-menu">
-                <li class="about">About</li>
-                <li class="resume">Resume</li>
-                <li class="posts">Posts</li>
-                <li class="contact">Contact</li>
-            </ul>
-    
-            <div class="_toggle2"></div> -->
+        <nav class="_nav-bar _navbar-collapse">
             <div class='section-updown'>
                 <div class='section-up'>∧</div>
                 <div class='section-down'>∨</div>
@@ -60,7 +49,7 @@
         </nav>
 
 
-        <section class="_track _content-section _article-section" id = "profile">
+        <section class="_track _content-section _article-section" id = "glance" style='background-color:rgba(255,255,164,0.8)'>
             <div class='wide-piece subsection' style='margin-bottom:30px'>
                 <h1>At a Glance</h1>
                 <ul class='grid-3-1-ul'>
@@ -122,7 +111,7 @@
 
         </section>            
 
-        <section class = '_track _content-section _article-section' id='stories'>
+        <section class = '_track _content-section _article-section' id='stories' style='background-color:rgba(255,255,164,0.3)'>
             <h1>More about me</h1>
             <hr>
 
@@ -207,7 +196,7 @@
             </div>
         </section>
 
-        <section class="_track _content-section _article-section" id = "upcoming-events">
+        <section class="_track _content-section _article-section" id = "upcoming-events" style='background-color:rgba(184,184,184,0.8)'>
             <h1>Upcoming Events</h1>
             <hr>
             <div class = 'big-piece'>
@@ -239,10 +228,10 @@
     
     <!-- javascript -->
     <script>
-        var theme_color = '255,255,164';
         var section_name = 'ABOUT'
     </script>
     <script src="js/jquery.js"></script>
+    <script src='js/manage-version.js'></script>
         
 </body>
     

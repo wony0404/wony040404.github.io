@@ -1,16 +1,18 @@
 $(document).ready(function()
 {	    
 	applyMenubar();
-	applyFooter(); 
+	applyFooter();
+	lastUpdated();
+
 	applyClickEvent(); 
 
 	mobile();
 	heightNavigation();
 	resizeHeightNavigation();
-	scrollSpy();
-	
+
+
 	$(window).on('scroll', function(){
-		scrollSpy();W
+		scrollSpy();
     });
 
 	$(window).on('resize', function(){
@@ -27,25 +29,85 @@ $(document).ready(function()
 			$('#birth p').text(myAge);
 		}, 100);
 	}
-
-	$('header ._profile div').css('color', 'rgb(' + theme_color + ')');
-	var count = 0;
-	$('._content-section').each(function(){
-		if($(this).attr('id') === 'contact'){
-		} else {
-			if(count == 0){
-				$(this).css('background-color', 'rgba(' + theme_color + ',0.4)');
-			} else {
-				$(this).css('background-color', 'white');
-			}
-		}
-		count = 1 - count;
-	});
 });
 
 $(window).load(function(){
 	$('html').css('display', 'block');
+	scrollSpy();
 });
+
+
+function date_mmmddyyHHMM(date)
+{
+	var d = date.getDate();
+	var m = date.getMonth() + 1;
+	var y = date.getFullYear();
+	var h = date.getHours();
+	var mm = date.getMinutes();
+	var mmm = 
+		( 1==m)?'Jan':( 2==m)?'Feb':(3==m)?'Mar':
+		( 4==m)?'Apr':( 5==m)?'May':(6==m)?'Jun':
+		( 7==m)?'Jul':( 8==m)?'Aug':(9==m)?'Sep':
+		(10==m)?'Oct':(11==m)?'Nov':'Dec';
+
+	return "" +
+    mmm + " " + (d<10?"0"+d:d) + ", " +
+    y + " at " + h + ":" + (mm<10?"0"+mm:mm);
+}
+
+function lastUpdated(){
+	if($('.current-time').length){
+		var s  = "Unknown";
+		var d1;
+		if(0 != (d1=Date.parse(document.lastModified))) {
+			s = "" + date_mmmddyyHHMM(new Date(d1));
+		}
+	  
+		$('.current-time').text('Last updated on ' + s);
+	}
+}
+function applyMenubar(){
+	$('.menubar').html(
+		"\
+        <div class='left-menu'><a href='index.html'><img src = 'assets/icons/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>\
+        <div class='right-menu'>\
+            <img src='assets/icons/rightmenu-button.png' class='right-menu-button'/>\
+            <div class='right-menu-dropmenu'>\
+                <div><a href='about.html'>ABOUT</a></div>\
+                <div><a href='resume.html'>RESUME</a></div>\
+                <div><a href='posts.html'>POSTS</a></div>\
+                <div><a href='contact.html'>CONTACT</a></div>\
+            </div>\
+            <div class='right-menu-menu'>\
+                <div><a href='about.html'>ABOUT</a></div>\
+                <div><a href='resume.html'>RESUME</a></div>\
+                <div><a href='posts.html'>POSTS</a></div>\
+                <div><a href='contact.html'>CONTACT</a></div>\
+            </div>\
+        </div>\
+		"
+    );
+	$('.right-menu a').each(function(){
+		if($(this).text() === section_name)
+			$(this).addClass('this-page');
+	});
+}
+function applyFooter(){
+	$('footer').html(
+		"\
+        <div class='_overlay' style='background-color: rgba(24,24,30, 0.8)'></div>\
+        <div class='_footer-line'>\
+            <a href='mailto:jhyunp@snu.ac.kr'>jhyunp@snu.ac.kr</a>\
+            <p>This is the beta version of my resume page.</p>\
+            <p>You can see the codes on my github.</p>\
+            <p>Version:"+versionUpdate+"</p>\
+			<p>Last modified:"+document.lastModified+"</p>\
+        </div>\
+        <div class='_goto-top'><img src='assets/icons/arrow-up.png'/></div>\
+		"
+	);
+}
+
 
 function applyClickEvent()
 {
@@ -147,7 +209,6 @@ function updateTmpActiveSection(){
 function scrollSpy() 
 {
 	updateTmpActiveSection();
-
 	if((activeSection !== tmpActiveSection) && (tmpActiveSection !== 'header') && (tmpActiveSection !== 'footer')){
 		if($('._nav-bar ._nav-menu').length){
 			$('._nav-bar ._nav-menu .' + activeSection).removeClass('_active');
@@ -183,6 +244,8 @@ function mobile() {
 		$('._nav-bar ._toggle').css("opacity", "1");
 		$('._nav-bar ._toggle2').css("opacity", "1");
 		$('._nav-bar ._nav-menu').hide();
+	} else if ($('._nav-bar ._nav-menu').length) {
+		$('._nav-bar ._nav-menu .' + $('._contents ._track').attr('id')).addClass('_active');
 	}
 }
 
@@ -203,7 +266,7 @@ function resizeHeightNavigation()
 function heightNavigation()
 {
 	var windowHeight = $(window).height();
-	$('header').each(function(){
+	$('.tall-header').each(function(){
 		$(this).css({
 			'min-height': (windowHeight) + 'px'
 		});
@@ -237,3 +300,4 @@ function heightNavigation()
 // 		$('#random-sentence').html(phrases);
 // 	}
 // }
+

@@ -1,25 +1,25 @@
 
 @font-face {
     font-family: 'noto-kor-ii';
-    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Thin.otf');
+    src: url('../assets/fonts/noto-kor/NotoSansCJKkr-Thin.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-i';
-    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Light.otf');
+    src: url('../assets/fonts/noto-kor/NotoSansCJKkr-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor';
-    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Regular.otf');
+    src: url('../assets/fonts/noto-kor/NotoSansCJKkr-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-b';
-    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf');
+    src: url('../assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,28 +27,28 @@
 @font-face {
     font-family: 'noto-eng';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensed.ttf'); */
-    src:url('assets/fonts/noto-sans/NotoSans-Regular.ttf');
+    src:url('../assets/fonts/noto-sans/NotoSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-b';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedExtraBold.ttf'); */
-    src:url('assets/fonts/noto-sans/NotoSans-Bold.ttf');
+    src:url('../assets/fonts/noto-sans/NotoSans-Bold.ttf');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-i';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('assets/fonts/noto-sans/NotoSans-Light.ttf');
+    src:url('../assets/fonts/noto-sans/NotoSans-Light.ttf');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'noto-eng-ii';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
+    src:url('../assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
     font-weight: normal;
     font-style: italic;
 }
@@ -280,6 +280,7 @@ footer ._goto-top:hover {
 
 ._contents{
     position:relative;
+    margin:0;padding:0;
 }
 
 
@@ -294,17 +295,13 @@ footer ._goto-top:hover {
 ._nav-bar-collapse {
     position:absolute;
     top: 0;
-    transform: translateY(-55px);
+    transform: translateY(-50px);
 }
 
 ._nav-bar-collapse2 {
     position:absolute;
     bottom: 0;
     transform: translateY(10px);
-}
-._nav-bar-collapse2 .section-up,
-._nav-bar-collapse2 .section-down {
-    display:none;
 }
 ._nav-bar-fix {
     position:fixed;
@@ -380,7 +377,8 @@ footer ._goto-top:hover {
     background: rgba(50,50,50,1);
     color: #fafafa!important;
 }
-._nav-bar .section-updown{position:fixed;right:3%;bottom:20px;width:95px;display:flex;margin-top:5px;z-index:500}
+._nav-bar-collapse .section-updown, ._nav-bar-collapse2 .section-updown{display:none!important}
+._nav-bar-fix .section-updown{position:fixed;right:3%;bottom:20px;width:95px;display:flex;margin-top:5px;z-index:500}
 ._nav-bar .section-up,
 ._nav-bar .section-down{
     width:45px;height:25px;
@@ -586,7 +584,7 @@ footer ._goto-top:hover {
 }
 ._article-section > h1{
     font-family: 'noto-eng-b', 'noto-kor-b';
-    font-size:30px;display:inline-block;font-weight:600;
+    font-size:30px;font-weight:600;
     margin:auto;
     text-align:center;
     left:50%;
@@ -596,7 +594,7 @@ footer ._goto-top:hover {
 ._article-section > p{
     left:50%;
     transform: translateX(-50%);
-    text-align:center;font-size:15px;font-family:'noto-eng-i', 'noto-kor-ii';
+    text-align:center;font-size:15px;font-family:'noto-eng-ii', 'noto-kor-ii';
     width: 40%;
     margin-bottom:30px;
 }
@@ -609,6 +607,7 @@ footer ._goto-top:hover {
     display: inline-block;
 }
 ._article-section > .subsection > p {
+    font-family: 'noto-eng-i', 'noto-kor-i';
     text-align:left;font-size:11pt;
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -667,7 +666,7 @@ footer ._goto-top:hover {
 }
 .story h1 {
     font-family: 'noto-eng', 'noto-kor';
-    font-size: 20pt;
+    font-size: 18pt;
     margin-bottom: 10px;
 }
 .story p {
@@ -776,11 +775,11 @@ footer ._goto-top:hover {
         text-align:left!important;
         margin-left:auto!important;
         margin-right:auto!important;
-        font-size:13pt!important;
+        /* font-size:13pt!important; */
     }
     .flex_r-block h1,
     .flex-block h1{
-        font-size:18pt!important;
+        /* font-size:18pt!important; */
         text-align:center!important;
     }
 
