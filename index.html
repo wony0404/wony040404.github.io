@@ -3,7 +3,7 @@
 
 <head>
     <noscript><meta http-equiv="refresh" content="0;url=noscript.html"></noscript>
-    <script async src='manage-version.js'></script>
+    <script async src='js/manage-version.js'></script>
 
     <!-- meta set -->
     <meta charset="utf-8" />
@@ -23,7 +23,7 @@
 
         <div class='_profile'>
             <div style='font-size:35pt'>
-                <img src='data/profile-picture.png' style='width:200px;position:relative;margin:auto'>
+                <img src='assets/imgs/profile-picture.png' style='width:200px;position:relative;margin:auto'>
                 Jai Hyun Park
             </div>
             <p>
@@ -35,13 +35,14 @@
             </p>
         </div>
 
-        <div class="_see-more">
-            <div>
-                See my contents
-            </div>
-            <img src = 'data/arrow-down.png'/>
-        </div>
     </header>
+
+    <div class="_see-more">
+        <div>
+            See my contents
+        </div>
+        <img src = 'assets/icons/arrow-down.png'/>
+    </div>
 
     
     <!-- contents -->
@@ -52,13 +53,14 @@
                 <div class='section-down'>∨</div>
             </div>
         </nav>
-        
-        <section id='about' class='_track _thumbnail' style='background-image:url(data/20180629_143535-min.jpg);z-index:0'>
+
+ 
+        <section id='about' class='_track _thumbnail' style='background-image:url(assets/imgs/20180629_143535-min.jpg);z-index:0'>
             <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
     
             <div class='_profile'>
                 <div style='color:rgb(255,255,164)'>
-                    ABOUT<a href='about.html'><img src='data/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                    ABOUT<a href='about.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                 </div>
                 <p>
                     Hi, I'm <b style='font-size:35pt'>Jai Hyun Park</b>.
@@ -69,12 +71,12 @@
             </div>
         </section>
         
-        <section id='resume' class='_track _thumbnail' style='background-image:url(data/20190814-sac2019.jpg);z-index:0'>
+        <section id='resume' class='_track _thumbnail' style='background-image:url(assets/imgs/20190814-sac2019.jpg);z-index:0'>
             <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
     
             <div class='_profile'>
                 <div style='color:rgb(180,180,230)'>
-                    RESUME<a href='resume.html'><img src='data/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                    RESUME<a href='resume.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                 </div>
                 <p>
                     Hi, I'm <b>Jai Hyun Park</b>.
@@ -83,25 +85,25 @@
                 </p>
             </div>
         </section>
-        <section id='posts' class='_track _thumbnail' style='background-image:url(data/20180922_183635-min.jpg);z-index:0'>
+        <section id='posts' class='_track _thumbnail' style='background-image:url(assets/imgs/20180922_183635-min.jpg);z-index:0'>
             <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
     
             <div class='_profile'>
                 <div style='color:rgb(200,255,200)'>
-                    POSTS<a href='posts.html'><img src='data/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                    POSTS<a href='posts.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                 </div>
                 <p>
                     Sorry, I do not have any post yet.
                 </p>
             </div>
         </section>
-        <section id='contact' class='_track _thumbnail' style='background-image:url(data/20180519-hello-min.JPG);z-index:0'>
+        <section id='contact' class='_track _thumbnail' style='background-image:url(assets/imgs/20180519-hello-min.JPG);z-index:0'>
             <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
     
             <div class='_profile'>
                 <div style='color:rgb(159,159,159)'>
                     <!-- <img src = "data/profile-picture.png" style="width:100%;position:relative;margin:auto"/> -->
-                    CONTACT<a href='contact.html'><img src='data/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                    CONTACT<a href='contact.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                 </div>
                 <p>
                     <b style='font-size:35pt'>Contact</b> me with some <b style='font-size:25pt'>links!</b>
@@ -122,6 +124,7 @@
         var theme_color = '255,255,244';
         var section_name = 'INDEX'
     </script>
-    <script src="jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- <script>$('#about').load('about.html #header');</script> -->
 
 </body>

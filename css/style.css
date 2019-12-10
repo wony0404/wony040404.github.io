@@ -1,25 +1,25 @@
 
 @font-face {
     font-family: 'noto-kor-ii';
-    src: url('fonts/noto-kor/NotoSansCJKkr-Thin.otf');
+    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Thin.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-i';
-    src: url('fonts/noto-kor/NotoSansCJKkr-Light.otf');
+    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor';
-    src: url('fonts/noto-kor/NotoSansCJKkr-Regular.otf');
+    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Regular.otf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-b';
-    src: url('fonts/noto-kor/NotoSansCJKkr-Bold.otf');
+    src: url('assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,28 +27,28 @@
 @font-face {
     font-family: 'noto-eng';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensed.ttf'); */
-    src:url('fonts/noto-sans/NotoSans-Regular.ttf');
+    src:url('assets/fonts/noto-sans/NotoSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-b';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedExtraBold.ttf'); */
-    src:url('fonts/noto-sans/NotoSans-Bold.ttf');
+    src:url('assets/fonts/noto-sans/NotoSans-Bold.ttf');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-i';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('fonts/noto-sans/NotoSans-Light.ttf');
+    src:url('assets/fonts/noto-sans/NotoSans-Light.ttf');
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: 'noto-eng-ii';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('fonts/noto-sans/NotoSans-ExtraLight.ttf');
+    src:url('assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
     font-weight: normal;
     font-style: italic;
 }
@@ -66,11 +66,6 @@ b {
 }
 img {
     display:block;
-}
-
-.zindex0{
-    border:3pt red solid;
-    z-index:0!important;
 }
 /* Header and Footer */
 ._thumbnail,

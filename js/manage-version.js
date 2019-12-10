@@ -1,16 +1,16 @@
-var versionUpdate = '0.1.7';
+var versionUpdate = '0.1.8';
 
 var jsscript = document.createElement('script');
-jsscript.src = 'javascript.js?v=' + versionUpdate;
+jsscript.src = 'js/javascript.js?v=' + versionUpdate;
 document.body.appendChild(jsscript);
 
 var cssscript = document.createElement('link');
 cssscript.rel = 'stylesheet';
-cssscript.href = 'style.css?v=' + versionUpdate;
+cssscript.href = 'css/style.css?v=' + versionUpdate;
 document.head.appendChild(cssscript);
 var iconscript = document.createElement('link');
 iconscript.rel = 'shortcut icon';
-iconscript.href = 'data/logo-fill.png?v=' + versionUpdate;
+iconscript.href = 'assets/icons/logo-fill.png?v=' + versionUpdate;
 iconscript.type = 'image/x-icon';
 document.head.appendChild(iconscript);
 
@@ -20,7 +20,7 @@ applyFooter();
 function applyMenubar(){
 	$('.menubar').html(
 		"\
-        <div class='left-menu'><a href='index.html'><img src = 'data/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>\
+        <div class='left-menu'><a href='index.html'><img src = 'assets/icons/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>\
         <div class='right-menu'>\
             <img src='data/rightmenu-button.png' class='right-menu-button'/>\
             <div class='right-menu-dropmenu'>\
@@ -55,7 +55,7 @@ function applyFooter(){
             <p>Version:"+versionUpdate+"</p>\
 			<p>Last modified:"+document.lastModified+"</p>\
         </div>\
-        <div class='_goto-top'><img src='data/arrow-up.png'/></div>\
+        <div class='_goto-top'><img src='assets/icons/arrow-up.png'/></div>\
 		"
 	);
 }
