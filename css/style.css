@@ -67,6 +67,11 @@ b {
 img {
     display:block;
 }
+
+.zindex0{
+    border:3pt red solid;
+    z-index:0!important;
+}
 /* Header and Footer */
 ._thumbnail,
 header,
@@ -95,14 +100,14 @@ footer * {
 }
 
 /* Header */
-._thumbnail,header {min-height: 0px}
-header ._see-more {
-    position:absolute;
+._see-more {
+    position:relative;
     z-index: 999;
     width:100%;
     display:block;
     height: 70px!important;
-    bottom:0px;
+    top:-70px;
+    margin-bottom:-70px;
     font-family: 'noto-eng-i', 'noto-kor-i';
     font-size: 11pt;
     text-align: center;
@@ -116,15 +121,15 @@ header ._see-more {
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
 }
-header ._see-more:hover {
+._see-more:hover {
     background: rgba(0,0,0,0.5);
     transition:0.2s ease-in-out;
 }
-header ._see-more div{
+._see-more div{
     position: relative;
     margin-top:10px;
 }
-header ._see-more img{
+._see-more img{
     position:relative;
     margin:auto;
     width:15px;
