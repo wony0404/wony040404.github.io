@@ -1,5 +1,5 @@
 
-var versionUpdate = '0.1.10';
+var versionUpdate = '0.1.11';
 
 var jsscript = document.createElement('script');
 jsscript.src = 'js/javascript.js?v=' + versionUpdate;

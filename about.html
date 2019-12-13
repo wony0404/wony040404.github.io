@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <div class='menubar'></div>
+    <div class='load-menubar'></div>
 
     <!-- header -->
     <header class="_track tall-header" id='header' style='background-image:url(assets/imgs/20180629_143535-min.jpg)'>
@@ -41,16 +41,11 @@
     </div>
 
     <div class='_contents'>
-        <nav class="_nav-bar _navbar-collapse">
-            <div class='section-updown'>
-                <div class='section-up'>∧</div>
-                <div class='section-down'>∨</div>
-            </div>
-        </nav>
+        <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
 
 
         <section class="_track _content-section _article-section" id = "glance" style='background-color:rgba(255,255,164,0.8)'>
-            <div class='wide-piece subsection' style='margin-bottom:30px'>
+            <div class='wide-piece subsection' style='margin-bottom:30px' id='glance-components'>
                 <h1>At a Glance</h1>
                 <ul class='grid-3-1-ul'>
                     <li id='name'>
@@ -65,7 +60,7 @@
                         <h1>Residence</h1>
                         <p>Seoul, Republic of Korea</p>
                     </li>
-                    <li id='birth'>
+                    <li class='update-birth'>
                         <h1>Age</h1>
                         <p>1994.9.21.</p>
                     </li>
@@ -222,15 +217,11 @@
     </div>
 
     <!-- footer -->
-    <footer class="_track" style='background-image:url(assets/imgs/20180629_143535-min.jpg)' id='footer'>
-    </footer>
+    <footer class="_track load-footer" style='background-image:url(assets/imgs/20180629_143535-min.jpg)' id='footer'></footer>
     
     
     <!-- javascript -->
-    <script>
-        var section_name = 'ABOUT'
-    </script>
-    <script src="js/jquery.js"></script>
+    <script src= "js/jquery.js"></script>
     <script src='js/manage-version.js'></script>
         
 </body>

@@ -8,189 +8,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- css set -->
-
-    <style>
-        .gform {
-            position: relative;
-            padding-bottom:40px;
-            border-bottom:1pt rgba(255,255,240,0.5) solid;
-        }
-        .gform fieldset{
-            border:none;
-            display: block;
-            margin-bottom: 20px;
-        }
-        .gform fieldset label {
-            position:relative;
-            display: block;
-            width:100%;
-            font-family: 'noto-eng', 'noto-kor';
-            font-size: 14pt;
-            padding-left: 5px;
-            color: #fffff4;
-            opacity:0.9;
-            margin-bottom: 5px;
-        }
-        .gform fieldset input:disabled,
-        .gform fieldset input {
-            position:relative;
-            display: block;
-            width:100%;
-            height: 50px;
-            border-radius: 10px;
-            border:none;
-            font-family: 'noto-eng-i', 'noto-kor-i';
-            font-size: 13pt;
-            padding-left:15px;
-            padding-right:15px;
-            color:black;
-            opacity:0.4;
-            transition:0.4s ease-in-out;
-        }
-        .gform fieldset input:focus {
-            outline:none;
-            opacity:1;
-            transition:0.4s ease-in-out;
-        }
-        .gform fieldset textarea:disabled,
-        .gform fieldset textarea {
-            position:relative;
-            display: block;
-            width:100%;
-            height: 200px;
-            border-radius: 10px;
-            border:none;
-            font-family: 'noto-eng-i', 'noto-kor-i';
-            font-size: 13pt;
-            padding-top:10px;
-            padding-bottom:10px;
-            padding-left:15px;
-            padding-right:15px;
-            color:black;
-            resize:none;
-            opacity:0.4;
-            transition:0.4s ease-in-out;
-        }
-        .gform fieldset textarea:focus {
-            outline:none;
-            opacity:1;
-            transition:0.4s ease-in-out;
-        }
-        .gform button {
-            font-family: 'noto-eng', 'noto-kor';
-            font-size: 13pt;
-            border:none;
-            border-radius: 10px;
-            width:150px;
-            height:50px;
-            color:#fffff4;
-            background-color: #222222;
-            opacity:0.8;
-            right:0px;
-            margin-top: 10px;
-        }
-        .gform button:focus,
-        .gform button:hover {
-            outline:none;
-            background: #e2e2da;
-            color:#111111;
-            transition:0.2s ease-in-out;
-            cursor:pointer;
-        }
-        .gform button:disabled{
-            outline:none;
-            background: #dddddd;
-            color:#777777;
-        }
-        .gform .honeypot-field {
-            display: none;
-        }
-        .thankyou_message:before{
-            height:509.675px;
-            line-height: 509.675px;
-            color: black;
-        }
-        .thankyou_message:after{
-            height:100px;
-            line-height: 100px;
-            color: #fffff4;
-        }
-        .thankyou_message{
-            height:509.675px;
-            line-height: 509.675px;
-            margin:auto;
-            border-radius: 10px;
-            text-align:center;
-            background-color: #777777;
-            animation: blink;
-            animation-duration: 1.5s;
-            animation-delay: 0.5s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-        }
-        .contactlinks{
-            text-align: center;
-            padding-left: 10%;
-            padding-right: 10%;    
-            color: #fffff4;
-            opacity:0.9;
-            font-family: 'noto-eng-i', 'noto-kor-i';
-            font-size:12pt;
-        }
-        .contactlinks a{
-            font-family: 'noto-eng', 'noto-kor';
-            font-weight: 900;
-            color: #fffff4;
-            text-decoration: none;
-            font-size:12pt;
-        }
-        .contactlinks a:hover{
-            border-bottom: 0.5pt #fffff4 solid;
-            transition: 0.4s linear;
-        }
-                
-        @keyframes blink {
-            0% {
-                color:black;
-                height:509.675px;
-                line-height: 509.675px;
-                background-color: #777777;
-            }
-            10% {
-                background-color: #333333;
-            }
-            20% {
-                background-color: #777777;
-            }
-            30% {
-                background-color: #333333;
-            }
-            40% {
-                background-color: #777777;
-            }
-            60% {
-                height:509.675px;
-                line-height: 509.675px;
-                color:black;
-            }
-            100% {
-                height:100px;
-                line-height: 100px;
-                color:#fffff4;
-                background-color: #777777;
-            }
-        }
-
-    </style>
-
     <!-- title -->
     <title>Jai Hyun Park</title>
     
 </head>
 <body>
 
-    <div class='menubar'></div>
+    <div class='load-menubar'></div>
 
     <!-- header -->
     <header class="_track tall-header" id='header' style='background-image:url(assets/imgs/20180519-hello-min.JPG)'>
@@ -217,12 +41,7 @@
 
     <div class='_contents'>
 
-        <nav class="_nav-bar _navbar-collapse">
-            <div class='section-updown'>
-                <div class='section-up'>∧</div>
-                <div class='section-down'>∨</div>
-            </div>
-        </nav>
+        <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
 
         <section class="_content-section _article-section _track" id = "contact" style="background-color:#777777">
             <h1 style='color:#fffff4'>Contact</h1>
@@ -259,21 +78,17 @@
                 take a look at my pictures on <a href='https://www.instagram.com/jaihyun_park/'>Instagram</a>.
             </div>                    
 
+            <script data-cfasync="false" src="js/form-submission-handler.js"></script>
         </section>           
             
     </div>
 
     <!-- footer -->
-    <footer class="_track" id='footer' style='background-image:url(assets/imgs/20180519-hello-min.JPG)'>
-    </footer>
+    <footer class="_track load-footer" id='footer' style='background-image:url(assets/imgs/20180519-hello-min.JPG)'></footer>
     
     
     <!-- javascript -->
-    <script>
-        var section_name = 'CONTACT';
-    </script>
     <script src="js/jquery.js"></script>
     <script src='js/manage-version.js'></script>
-    <script data-cfasync="false" src="form-submission-handler.js"></script>
 
 </body>
