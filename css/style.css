@@ -2,28 +2,28 @@
 @font-face {
     font-family: 'noto-kor-ii';
     /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Thin.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff2');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-i';
     /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Light.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff2');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor';
     /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Regular.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.woff2');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-b';
     /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.woff2');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.woff');
     font-weight: normal;
     font-style: normal;
 }
