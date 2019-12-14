@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" style='display:none'>
 
 <head>
@@ -14,17 +15,17 @@
 </head>
 
 <body>
-    <div class='menubar'></div>
+    <div class='load-menubar'></div>
 
     <!-- header -->
-    <header class="_track tall-header" id='header'>
+    <header class="_track tall-header fixed" id='header'>
         <div class='_overlay' style="background-color: rgb(24,24,30)"></div>
 
         <div class='_profile'>
-            <div style='font-size:35pt'>
+            <a style='font-size:35pt'>
                 <img src='assets/imgs/profile-picture.png' style='width:200px;position:relative;margin:auto'>
                 Jai Hyun Park
-            </div>
+            </a>
             <p>
                 <b style='font-size:45pt'>Under <br> Construction</b> <br><br>
                 Hi, I'm <b style='font-size:30pt'>Jai Hyun Park</b>.
@@ -32,9 +33,11 @@
                 There might be <b>wrong information</b>, typos, and many other possible <b style='font-size:20pt'>errors</b>.<br>
                 Last update: <b style='font-size:15pt'>9 Dec 2019</b>
             </p>
-        </div>
+        </adiv>
 
     </header>
+
+    <section id='empty-header' class='_track tall-header'></section>
     <div class="_see-more">
         <div>
             See my contents
@@ -42,34 +45,21 @@
         <img src = 'assets/icons/arrow-down.png'/>
     </div>
 
-    
     <!-- contents -->
     <div class="_contents">
-        <nav class="_nav-bar _navbar-collapse">
-            <div class='section-updown'>
-                <div class='section-up'>∧</div>
-                <div class='section-down'>∨</div>
-            </div>
-        </nav>
 
- 
-        <section id='about' class='_track _thumbnail' style='background-image:url(assets/imgs/20180629_143535-min.jpg);z-index:0'>
-            <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
-    
-            <div class='_profile'>
-                <div style='color:rgb(255,255,164)'>
-                    ABOUT<a href='about.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                </div>
-                <p>
-                    Hi, I'm <b style='font-size:35pt'>Jai Hyun Park</b>.
-                    I live in <b style='font-size:25pt'>Seoul</b>, Republic of Korea.
-                    I love spending time on <b>playing piano</b>, <b>programming</b>, and <b style='font-size:30pt'>goofing around</b>.
-                    My favorite movie is 'Eternal Sunshine of the Spotless Mind'.
-                </p>
-            </div>
-        </section>
-        
-        <section id='resume' class='_track _thumbnail' style='background-image:url(assets/imgs/20190814-sac2019.jpg);z-index:0'>
+        <section class='load-header' src='/about.html'></section>
+        <section class='load-header' src='/resume.html'></section>
+        <section class='load-header' src='/posts.html'></section>
+        <section class='load-header' src='/contact.html'></section>
+
+        <!-- <section id='load-about-glance' class='_track' style='padding:0px 40px;'></section>
+
+        <section id='load-posts' class='_track wider-piece' style='z-index:0;margin:0px auto'></section>
+        <section id='load-tags' class='_track wider-piece' style='z-index:0;margin:0px auto'></section> -->
+
+
+        <!-- <section id='resume' class='wider-piece _track _thumbnail' style='background-image:url(assets/imgs/20190814-sac2019.jpg);z-index:0;margin:80px auto'>
             <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
     
             <div class='_profile'>
@@ -100,7 +90,6 @@
     
             <div class='_profile'>
                 <div style='color:rgb(159,159,159)'>
-                    <!-- <img src = "data/profile-picture.png" style="width:100%;position:relative;margin:auto"/> -->
                     CONTACT<a href='contact.html'><img src='assets/icons/link-open-solid-white.png' style='width:25px;height:25px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                 </div>
                 <p>
@@ -108,21 +97,17 @@
                     <b>Or,</b> You also can drop me a <b style='font-size:30pt'>memo!</b>
                 </p>
             </div>
-        </section>
+        </section> -->
     
     </div>
 
 
     <!-- footer -->
-    <footer class="_track" id='footer' style='background-color:rgba(24,24,30)'></footer>
+    <footer class="_track load-footer" id='footer' style='background-color:rgb(24,24,30)'></footer>
 
 
     <!-- javascript -->
-    <script>
-        var section_name = 'INDEX'
-    </script>
     <script src="js/jquery.js"></script>
     <script src='js/manage-version.js'></script>
-    <!-- <script>$('#about').load('about.html #header');</script> -->
 
 </body>

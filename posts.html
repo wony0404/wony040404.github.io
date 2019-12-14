@@ -24,14 +24,13 @@
         <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
 
         <div class='_profile'>
-            <div style='color:rgb(200,255,200)'>
-                <!-- <img src = "assets/imgs/profile-picture.png" style="width:100%;position:relative;margin:auto"/> -->
+            <a href='/posts.html' style='color:rgb(200,255,200)'>
                 POSTS
-            </div>
+            </a>
             <p>
                 Sorry, I do not have any post yet.
             </p>
-        </div>
+        </adiv>
 
     </header>
     <div class="_see-more">
@@ -41,56 +40,30 @@
         <img src = 'assets/icons/arrow-down.png'/>
     </div>
 
-    
     <!-- contents -->
     <div class="_contents">
 
         <!-- navigation -->
         <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
 
-        <section class='_track post-head post-section' id='recent-posts'>
-            <!-- <h1>Hot Posts</h1> -->
+        <section class='_track post-section' id='recent-posts'>
             <h1>Recent Posts</h1>
-            <div class='post-subsection wide-piece load-posts'>
-                <ul class='grid-3-1-ul maxheight-abstract-ul load-all-posts'>
-                    <li src='posts/site-manual.html'><p class='load-post-title'></p><p class='load-post-publish'></p><ul class='load-post-keywords'></ul><p class='load-post-abstract'></p><a class='post-link'>..More</a></li>
-                    <li src='posts/post-sample.html'><p class='load-post-title'></p><p class='load-post-publish'></p><ul class='load-post-keywords'></ul><p class='load-post-abstract'></p><a class='post-link'>..More</a></li>
-                    <li>..</li>
-                </ul>
+            <div class='wide-piece' style='background-color: rgba(200,255,200,0.3);margin:20px auto;padding:10px'>
+                <ul class='grid-3-1-ul maxheight-abstract-ul load-recent-posts load-posts'></ul>
             </div>
-            <!-- <div class='post-subsection wide-piece'>
-                <h1>Hot Posts</h1>
-                <ul class='grid-3-1-ul'>
-                    <li>Hello</li>
-                    <li>Hello</li>
-                    <li>Hello</li>
-                </ul>
-            </div> -->
+            <p style='width:100%;font-family:"noto-eng","noto-kor";font-size:12pt'>See more posts at <a href='all-posts.html'>HERE</a></p>
         </section>
 
-
-        <section class='_track post-section big-piece' id='all-lists'>
-            <h1>All posts</h1>
-            <div class='list-posts load-posts'>
-                <ul>
-                    <li src='posts/site-manual.html'><p class='load-post-title'></p><p class='load-post-publish'></p><ul class='load-post-keywords'></ul><p class='load-post-abstract'></p><a class='post-link'>..More</a></li>
-                    <li src='posts/post-sample.html'><p class='load-post-title'></p><p class='load-post-publish'></p><ul class='load-post-keywords'></ul><p class='load-post-abstract'></p><a class='post-link'>..More</a></li>
-                </ul>
-                <div>
-                    <div class='first'>≪</div><div class='prev'>＜</div><div class='number'>/</div><div class='next'>＞</div><div class='last'>≫</div>
-                </div>
-            </div>
-        </section>
 
         <section class='_track post-head post-section' id='tags'>
-
             <h1>Selected Tags</h1>
             <div class='narrow-piece hot-tags'>
                 <ul class='post-keywords'>
-                    <li class='post-keyword'><a href='tags.html#page-manual' style='font-family:"noto-eng-b","noto-kor-b";font-size:13pt'>page-manual</a></li>
+                    <li class='post-keyword'><a href='tags.html#page-manual' style='font-family:"noto-eng-b","noto-kor-b";font-size:13pt'>
+                        page-manual</a></li>
                 </ul>
             </div>
-            <p style='font-family:"noto-eng","noto-kor";font-size:12pt;'>See more tags at <a href='tags.html'>HERE</a></p>
+            <p style='width:100%;font-family:"noto-eng","noto-kor";font-size:12pt;'>See more tags at <a href='tags.html'>HERE</a></p>
         </section>    
 
     </div>

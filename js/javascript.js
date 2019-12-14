@@ -1,5 +1,4 @@
 var num_rows = 3;
-var pageCount = 0;
 var prevActiveSection;
 var activeSection;
 var nextActiveSection;
@@ -51,12 +50,13 @@ function loadPost(that) {
 	that.find('.load-post-keywords').load(postPath +' #post-keywords');
 	that.find('.load-post-abstract').load(postPath +' #post-abstract');
 	that.find('.post-link').attr('href', postPath);
+	that.show();
 }
-function loadPostsList() {
-	$('.load-posts > .load-all-posts > li').each(function(){
-		loadPost($(this));
-	});
-}
+// function loadPostsList() {
+// 	$('.load-posts > .load-all-posts > li').each(function(){
+// 		loadPost($(this));
+// 	});
+// }
 function updateAge(){
 	if( $('.update-birth').length > 0 ){
 		var myAge;
@@ -71,12 +71,14 @@ $(document).ready(function()
 {	    
 	loadMenubar();
 	loadFooter();
+	loadHeader();
 	loadPostFooter();
-	loadPostsList();
-	refreshPostsList();
 	updateAge();
 
+	initializePostLists();
 	listPostsClickEvents();
+
+
 
 	applyClickEvent(); 
 
@@ -292,73 +294,84 @@ function heightNavigation()
 }
 
 
-// function randomSentence(){
-// 	if($('#random-sentence').length){
-// 		var phrases = [
-// 			"I have a pen, I have an apple.",
-// 			"Hi, I am Jai Hyun Park.",
-// 			"I am a student in Seoul-National-University",
-// 			"I live in Seoul, Korea",
-// 			"I love spending time on programming and playing piano",
-// 			"My research interest is cryptography: HE and VC"
-// 		];
-// 		var fontSizes = [13, 13, 13, 15, 15, 15, 20, 20, 25, 25, 30, 30, 35, 35];
-// 		phrases = phrases[Math.floor(Math.random() * phrases.length)].split(" ");
-// 		for(var i in phrases){
-// 			if(Math.random() > 0.5){
-// 				phrases[i] = "<b style='font-size:" + fontSizes[Math.floor(Math.random() * fontSizes.length)] + "pt'>"+ phrases[i] + "</b>"
-// 			}
-// 		}
-// 		phrases = phrases.join(" ");
-// 		$('#random-sentence').html(phrases);
-// 	}
-// }
+function initializePostLists() {
+	$('.load-slice-posts').each(function(){
+		refreshPostsList($(this),0,Math.floor(($(this).children('ul').children('li').length - 1) / num_rows) + 1);
+	});
 
+	$('.load-all-posts').each(function(){
+		$(this).each(function(){
+			$(this).children('li').each(function(){
+				loadPost($(this));
+			})
+		});
+		refreshPostsList($(this),0,Math.floor(($(this).children('ul').children('li').length - 1) / num_rows) + 1);
+	});
 
-function listPostsClickEvents(){
-	if($('.list-posts').length){
-		$('.list-posts > div > .first').on('click',function(){
-			pageCount = 0;
-			refreshPostsList();
+	$('.load-recent-posts').each(function(){
+		$(this).load('/all-posts.html #all-posts > ul > li:lt(3)', function(){
+			$(this).find('li').each(function(){
+				loadPost($(this));
+			})
+		})
+	});
+}
+
+function listPostsClickEvents() {
+	$('.load-slice-posts').each(function(){
+		var pageCount = $(this).children('div').children('.number').text().split('/')[0] - 1;
+		var numPages = $(this).children('div').children('.number').text().split('/')[1] - 0;
+		$(this).children('div').children('.first').on('click',function(){
+			pageCount=0;
+			refreshPostsList($(this).parent().parent(), pageCount, numPages);
 		});
-		$('.list-posts > div > .last').on('click',function(){
-			pageCount = Math.floor( ($('.list-posts > ul > li').length - 1) / num_rows);
-			refreshPostsList();
+		$(this).children('div').children('.last').on('click',function(){
+			pageCount = numPages - 1;
+			refreshPostsList($(this).parent().parent(), pageCount, numPages);
 		});
-		$('.list-posts > div > .prev').on('click',function(){
+		$(this).children('div').children('.prev').on('click',function(){
 			if(pageCount === 0)
 				return false;
 			pageCount --;
-			refreshPostsList();
+			refreshPostsList($(this).parent().parent(), pageCount, numPages);
 		});
-		$('.list-posts > div > .next').on('click',function(){
-			if(pageCount === Math.floor( ($('.list-posts > ul > li').length - 1) / num_rows))
+		$(this).children('div').children('.next').on('click',function(){
+			if(pageCount === numPages - 1)
 				return false;
 			pageCount ++;
-			refreshPostsList();
+			refreshPostsList($(this).parent().parent(), pageCount, numPages);
 		});
-	}
+	});
 }
-function refreshPostsList() {
-	if($('.list-posts').length){
-		var count = 0;
-		$('.list-posts > ul > li').each(function(){
-			if((count < (pageCount + 1) * num_rows) && (count >= pageCount * num_rows)){
-				$(this).css('border-top', '1pt dashed rgba(170,225,170)');
-				if((count === pageCount * num_rows) && (!$(this).parents().hasClass('grid-3-1-ul'))){
-					$(this).css('border-top', 'none');
-				}
-				loadPost($(this))
-				$(this).show();
-			}else{
-				$(this).hide();
-			}
-			count ++;
-		});
-		$('.list-posts > div > .number').text((pageCount + 1) + '/' + (Math.floor(($('.list-posts > ul > li').length - 1)/ num_rows) + 1));
-		$('html, body').stop().animate({
-			scrollTop: $('.list-posts').offset().top
-		}, 400);	
-	}
 
+function refreshPostsList(that, pageCount, numPages) {
+	var count = 0;
+	that.children('ul').children('li').each(function(){
+		if((count < (pageCount + 1) * num_rows) && (count >= pageCount * num_rows)){
+			$(this).css('border-top', '1pt dashed rgba(200,200,200,0.8)');
+			if((count === pageCount * num_rows) && (!$(this).parents().hasClass('grid-3-1-ul'))){
+				$(this).css('border-top', 'none');
+			}
+			loadPost($(this));
+			$(this).show();
+		}else{
+			$(this).hide();
+		}
+		count ++;
+	});
+	that.children('div').children('.number').text((pageCount + 1) + '/' + numPages);
+}
+
+function loadHeader(){
+	$('.load-header').each(function(){
+		$(this).load($(this).attr('src') + ' #header', function(){
+			$(this).find('.tall-header').css({
+				'height':'150px',
+				'position':'absolute',
+				'bottom':'0'
+			});
+			$(this).find('._profile').children('p').hide();
+			$(this).find('._profile').css({'position':'absolute','bottom':'30px','padding-bottom':'0px'});
+		});
+	});
 }
