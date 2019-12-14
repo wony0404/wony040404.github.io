@@ -71,7 +71,7 @@ $(document).ready(function()
 {	    
 	loadMenubar();
 	loadFooter();
-	loadHeader();
+	// loadHeader();
 	loadPostFooter();
 	updateAge();
 
@@ -308,13 +308,13 @@ function initializePostLists() {
 		refreshPostsList($(this),0,Math.floor(($(this).children('ul').children('li').length - 1) / num_rows) + 1);
 	});
 
-	$('.load-recent-posts').each(function(){
-		$(this).load('/all-posts.html #all-posts > ul > li:lt(3)', function(){
-			$(this).find('li').each(function(){
-				loadPost($(this));
-			})
-		})
-	});
+	// $('.load-recent-posts').each(function(){
+	// 	$(this).load('/posts.html #all-posts > ul > li:lt(3)', function(){
+	// 		$(this).find('li').each(function(){
+	// 			loadPost($(this));
+	// 		})
+	// 	})
+	// });
 }
 
 function listPostsClickEvents() {
@@ -362,16 +362,16 @@ function refreshPostsList(that, pageCount, numPages) {
 	that.children('div').children('.number').text((pageCount + 1) + '/' + numPages);
 }
 
-function loadHeader(){
-	$('.load-header').each(function(){
-		$(this).load($(this).attr('src') + ' #header', function(){
-			$(this).find('.tall-header').css({
-				'height':'150px',
-				'position':'absolute',
-				'bottom':'0'
-			});
-			$(this).find('._profile').children('p').hide();
-			$(this).find('._profile').css({'position':'absolute','bottom':'30px','padding-bottom':'0px'});
-		});
-	});
-}
+// function loadHeader(){
+// 	$('.load-header').each(function(){
+// 		$(this).load($(this).attr('src') + ' #header', function(){
+// 			$(this).find('.tall-header').css({
+// 				'height':'150px',
+// 				'position':'absolute',
+// 				'bottom':'0'
+// 			});
+// 			$(this).find('._profile').children('p').hide();
+// 			$(this).find('._profile').css({'position':'absolute','bottom':'30px','padding-bottom':'0px'});
+// 		});
+// 	});
+// }

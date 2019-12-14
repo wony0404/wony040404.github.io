@@ -716,7 +716,7 @@ footer ._goto-top:hover {
 
     ._profile {
         position: relative;
-        padding-top:130px;
+        padding-top:110px;
         bottom:0;
         left:0;
         margin:auto;
@@ -825,6 +825,7 @@ footer ._goto-top:hover {
 .gform {
     position: relative;
     padding-bottom:40px;
+    margin-bottom:50px!important;
     border-bottom:1pt rgba(255,255,240,0.5) solid;
 }
 .gform fieldset{
@@ -951,6 +952,7 @@ footer ._goto-top:hover {
     opacity:0.9;
     font-family: 'noto-eng-i', 'noto-kor-i';
     font-size:12pt;
+    margin-bottom: 20px!important;
 }
 .contactlinks a{
     font-family: 'noto-eng', 'noto-kor';
@@ -1052,7 +1054,7 @@ footer ._goto-top:hover {
 .load-slice-posts > div > .next, .load-slice-posts > div > .last {margin-right:0px;margin-left:10px;cursor:pointer}
 .load-slice-posts > div > .number{width:45px!important;text-align: center;font-family:'noto-eng-i';font-size:11pt;}
 
-.maxheight-abstract-ul > li .post-abstract {height:40px;overflow:hidden}
+/* .maxheight-abstract-ul > li .post-abstract {height:40px;overflow:hidden} */
 
 .post-with-description {background:none!important;border-radius:0!important;}
 .post-with-description > li {border-radius:0px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-left:3pt solid darkgray;margin:10px 3px;padding:5px 3px}
@@ -1060,8 +1062,8 @@ footer ._goto-top:hover {
 .post-with-description > li:hover {background:rgba(24,24,32,0.05)!important}
 .post-with-description .description {font-family:'noto-eng','noto-kor';font-size:12pt;color:black;margin:10px 10px;margin-bottom:0px;padding:10px 10px;border-left:3pt lightgray solid}
 
-.hot-tags{background-color: rgba(24,24,32,0.9);padding:15px;border-radius:10px;margin-bottom:10px}
-.hot-tags a {border:none}
+/* .hot-tags{background-color: rgba(24,24,32,0.9);padding:15px;border-radius:10px;margin-bottom:10px}
+.hot-tags a {border:none} */
 
 
-.load-header {height:150px;overflow:hidden;position:relative}
+/* .load-header {height:150px;overflow:hidden;position:relative} */
