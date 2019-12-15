@@ -1,64 +1,63 @@
 
 @font-face {
     font-family: 'noto-kor-ii';
-    /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Thin.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff');
     font-weight: normal;
     font-style: normal;
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff2') format('woff2'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff') format('woff'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.otf') format('opentype');
 }
 @font-face {
     font-family: 'noto-kor-i';
-    /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Light.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff2') format('woff2'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff') format('woff'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor';
-    /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Regular.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.woff');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.woff2') format('woff2'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.woff') format('woff'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-kor-b';
-    /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Black.woff');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.woff2') format('woff2'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.woff') format('woff'),
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'noto-eng-ii';
+    font-weight: normal;
+    font-style: normal;
+    src:url('/assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'noto-eng-i';
+    src:url('/assets/fonts/noto-sans/NotoSans-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'noto-eng';
-    /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensed.ttf'); */
     src:url('/assets/fonts/noto-sans/NotoSans-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-b';
-    /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedExtraBold.ttf'); */
-    src:url('/assets/fonts/noto-sans/NotoSans-Black.ttf');
+    src:url('/assets/fonts/noto-sans/NotoSans-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'noto-eng-i';
-    /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('/assets/fonts/noto-sans/NotoSans-Light.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'noto-eng-ii';
-    /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedLight.ttf'); */
-    src:url('/assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
-    font-weight: normal;
-    font-style: italic;
-}
 
 /* Global Setting */
-html, body { color: black; font-family: 'noto-eng', 'noto-kor' !important; height: 100%; background:white}
+html, body { color: black; font-family: 'noto-eng','noto-kor' !important; height: 100%; background:white}
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +65,7 @@ html, body { color: black; font-family: 'noto-eng', 'noto-kor' !important; heigh
 }
 b {
     position:relative!important;
-    font-family: 'noto-eng-b', 'noto-kor-b';
+    font-family: 'noto-eng-b','noto-kor-b';
 }
 img {
     display:block;
@@ -105,7 +104,7 @@ footer * {
     height: 70px!important;
     top:-70px;
     margin-bottom:-70px;
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 11pt;
     text-align: center;
     color: #ffffe4;
@@ -148,7 +147,7 @@ footer * {
     display:inline-block;
     text-align:center;
     text-decoration: none;
-    font-family:'noto-eng-b', 'noto-kor-b';
+    font-family:'noto-eng-b','noto-kor-b';
     font-size:50pt;
     margin:auto;
 }
@@ -159,7 +158,7 @@ footer * {
     margin:auto;
     margin-left:50px;
     padding-left:50px;
-    font-family: 'noto-eng-ii', 'noto-kor-ii';
+    font-family: 'noto-eng-ii','noto-kor-ii';
     font-size:13pt;
     line-height: 35px;
 }
@@ -178,7 +177,7 @@ footer ._footer-line{
     text-align:center;
 }
 footer ._footer-line h1{
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 12pt!important;
     color: white;
     text-align: center;
@@ -189,7 +188,7 @@ footer ._footer-line h1{
 }
 footer ._footer-line a{
     margin:auto;
-    /* font-family: 'noto-eng-i', 'noto-kor-i'; */
+    /* font-family: 'noto-eng-i','noto-kor-i'; */
     /* font-weight: 600; */
     /* font-size: 11pt; */
     color: white;
@@ -209,7 +208,7 @@ footer ._footer-line a:hover{
     transition: 0.4s ease-in-out;
 }
 footer ._footer-line p{
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 8pt;
     color: white;
     text-align: center;
@@ -262,7 +261,7 @@ footer ._goto-top:hover {
 }
 .menubar .right-menu a {
     margin:auto;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 12pt;
     color:#ffffea;
     transition:0.2s ease-in-out;
@@ -339,7 +338,7 @@ footer ._goto-top:hover {
     color: rgba(0,0,0,0.5);
     display:block;
     text-align: center;
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     border-radius: 10px;
     cursor: pointer;
 }
@@ -347,7 +346,7 @@ footer ._goto-top:hover {
     height:45px;
     background-color: rgba(255,255,255,0.2);
     line-height:35px;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 11pt;
     color:black;
     text-align:center;
@@ -407,7 +406,7 @@ footer ._goto-top:hover {
     cursor:pointer;
     color:#fffff4;
     text-align:center;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
 }
 .section-top{
     width:25px;height:25px;
@@ -417,7 +416,7 @@ footer ._goto-top:hover {
     cursor:pointer;
     color:#fffff4;
     text-align:center;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
 }
 
 .section-up{
@@ -439,7 +438,7 @@ footer ._goto-top:hover {
 }
 ._content-section * {
     position: relative;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
 }
 
 
@@ -481,13 +480,13 @@ footer ._goto-top:hover {
     margin-left:20px;
 }
 .brief-ul > li h1{
-    font-family: 'noto-eng', 'noto-kor';
-    font-weight:600;
+    font-family: 'noto-eng-b','noto-kor-b';
+    /* font-weight:600; */
     font-size: 14pt;
     margin-bottom:5px;
 }
 .brief-ul > li p{
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     margin-bottom:2px;
     font-size: 11pt;
 }
@@ -509,11 +508,11 @@ footer ._goto-top:hover {
 }
 .detail-ul .info-tag > h1 {
     font-size:13pt;
-    font-family:'noto-eng-b', 'noto-kor-b';
+    font-family:'noto-eng-b','noto-kor-b';
     margin-bottom: 5px;
 }
 .detail-ul .info-tag > p {
-    font-family:'noto-eng-ii', 'noto-kor-ii';
+    font-family:'noto-eng-ii','noto-kor-ii';
     font-size:11pt;
 }
 .detail-ul .description {
@@ -525,12 +524,12 @@ footer ._goto-top:hover {
     margin-left:auto;
 }
 .detail-ul .description > h1 {
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 11pt;
     margin-bottom:5px;
 }
 .detail-ul .description > p {
-    font-family: 'noto-eng-i', 'noto-kor-i';font-size: 11pt
+    font-family: 'noto-eng-i','noto-kor-i';font-size: 11pt
 }
 
 .flex_r-block,
@@ -572,14 +571,14 @@ footer ._goto-top:hover {
     border-left: 3pt gray solid;
 }
 .grid-3-1-ul > li h1 {
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 12pt;
     position: relative;
     margin:auto;
     margin-left:0;
 }
 .grid-3-1-ul > li p {
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 12pt;
     position: relative;
     margin:auto;
@@ -612,8 +611,8 @@ footer ._goto-top:hover {
     margin-bottom:80px;
 }
 ._article-section > h1{
-    font-family: 'noto-eng-b', 'noto-kor-b';
-    font-size:30px;font-weight:600;
+    font-family: 'noto-eng-b','noto-kor-b';
+    font-size:30px;
     margin:auto;
     text-align:center;
     margin-bottom:30px;
@@ -622,11 +621,11 @@ footer ._goto-top:hover {
     width: 40%;
     left:50%;
     transform: translateX(-50%);
-    text-align:center;font-size:15px;font-family:'noto-eng-ii', 'noto-kor-ii';
+    text-align:center;font-size:15px;font-family:'noto-eng-ii','noto-kor-ii';
     margin-bottom:30px;
 }
 ._article-section > .subsection > h1 {
-    font-family: 'noto-eng-b', 'noto-kor-b';
+    font-family: 'noto-eng-b','noto-kor-b';
     text-align:left;font-size:18pt;
     border-bottom: 1px solid rgba(0,0,0,0.3);
     padding-bottom: 5px;
@@ -634,7 +633,7 @@ footer ._goto-top:hover {
     display: inline-block;
 }
 ._article-section > .subsection > p {
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     text-align:left;font-size:11pt;
     padding-bottom: 5px;
     margin-bottom: 20px;
@@ -655,12 +654,12 @@ footer ._goto-top:hover {
     object-fit: cover;
 }
 .story h1 {
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 18pt;
     margin-bottom: 10px;
 }
 .story p {
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 13pt;
 }
 
@@ -835,7 +834,7 @@ footer ._goto-top:hover {
     position:relative;
     display: block;
     width:100%;
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     font-size: 14pt;
     padding-left: 5px;
     color: #fffff4;
@@ -850,7 +849,7 @@ footer ._goto-top:hover {
     height: 50px;
     border-radius: 10px;
     border:none;
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 13pt;
     padding-left:15px;
     padding-right:15px;
@@ -871,7 +870,7 @@ footer ._goto-top:hover {
     height: 200px;
     border-radius: 10px;
     border:none;
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 13pt;
     padding-top:10px;
     padding-bottom:10px;
@@ -888,7 +887,7 @@ footer ._goto-top:hover {
     transition:0.4s ease-in-out;
 }
 .gform button {
-    font-family: 'noto-eng', 'noto-kor';
+    font-family: 'noto-eng','noto-kor';
     position:relative;
     width:150px;
     font-size: 13pt;
@@ -947,13 +946,12 @@ footer ._goto-top:hover {
     padding-right: 10%;    
     color: #fffff4;
     opacity:0.9;
-    font-family: 'noto-eng-i', 'noto-kor-i';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size:12pt;
     margin-bottom: 20px!important;
 }
 .contactlinks a{
-    font-family: 'noto-eng', 'noto-kor';
-    font-weight: 900;
+    font-family: 'noto-eng-b','noto-kor-b';
     color: #fffff4;
     text-decoration: none;
     font-size:12pt;
@@ -999,22 +997,22 @@ footer ._goto-top:hover {
 
 .post-head .post-info *{position:relative}
 .post-head .post-info{position:relative;margin-top:180px;margin-bottom:50px;z-index:900;text-align:left}
-.post-head .post-publish {position:relative;text-align:left;margin:0;margin-right:auto;font-family:"noto-eng-b","noto-kor-b";font-size:13pt;color:#fffff4}
+.post-head .post-publish {position:relative;text-align:left;margin:0;margin-right:auto;font-family:'noto-eng-b','noto-kor-b';font-size:13pt;color:#fffff4}
 .post-head .post-publish a {color:inherit;text-decoration:none;font-family:inherit;font-size:inherit}
-.post-head .post-title {position:relative;font-family:"noto-eng-b", "noto-kor-b";font-size:35pt;padding:0;margin:0px;color:white}
+.post-head .post-title {position:relative;font-family:'noto-eng-b','noto-kor-b';font-size:35pt;padding:0;margin:0px;color:white}
 .post-head .post-keywords {position:relative;list-style-type:none;margin:0px 0px;padding:0;width:100%;display:inline-block}
 .post-head .post-keyword {position:relative;background-color:rgba(255,255,243,0.6);border-radius:5px;padding:0px 6px;padding-bottom:2px;margin:5px 5px;display:inline-block}
-.post-head .post-keyword a {color:rgb(50,50,58);font-family:"noto-eng","noto-kor";font-size:10pt;text-decoration:none}
-.post-head .post-update {position:relative;text-align:left;margin:30px 0;margin-right:auto;font-family:"noto-eng-ii","noto-kor-ii";font-size:9pt;color:#fffff4} 
+.post-head .post-keyword a {color:rgb(50,50,58);font-family:'noto-eng','noto-kor';font-size:10pt;text-decoration:none}
+.post-head .post-update {position:relative;text-align:left;margin:30px 0;margin-right:auto;font-family:'noto-eng-ii','noto-kor-ii';font-size:9pt;color:#fffff4} 
 .inside-post .post-abstract {border-radius:10px;margin:50px auto;padding:50px;background-color:rgba(220,220,215,0.3);text-align:center;color:#505060;font-family:'noto-eng','noto-kor';font-size:12pt}
 
 .post-section {z-index: 0;position: relative;height:auto;display:block;padding-top:50px;padding-bottom:40px;}
-.post-section * {position: relative;font-family: 'noto-eng', 'noto-kor';}
+.post-section * {position: relative;font-family: 'noto-eng','noto-kor';}
 .post-section hr {border:none;border-top:1px solid black;width:20%;opacity:0.5;margin:auto;margin-bottom:80px}
-.post-section > h1 {font-family: 'noto-eng-b', 'noto-kor-b';font-size:30px;font-weight:600;margin:auto;text-align:center;margin-bottom:30px}
-.post-section > p {width: 40%;left:50%;transform: translateX(-50%);text-align:center;font-size:15px;font-family:'noto-eng-ii', 'noto-kor-ii';margin-bottom:30px}
-.post-subsection h1 {font-family: 'noto-eng-b', 'noto-kor-b';text-align:left;font-size:18pt;border-bottom: 1px solid rgba(0,0,0,0.3);padding-bottom: 5px;margin-bottom: 20px;display: inline-block}
-.post-subsection p {font-family: 'noto-eng', 'noto-kor';text-align:left;font-size:12pt;padding-bottom:5px;margin-bottom:20px;display:block}
+.post-section > h1 {font-family: 'noto-eng-b','noto-kor-b';font-size:30px;margin:auto;text-align:center;margin-bottom:30px}
+.post-section > p {width: 40%;left:50%;transform: translateX(-50%);text-align:center;font-size:15px;font-family:'noto-eng-ii','noto-kor-ii';margin-bottom:30px}
+.post-subsection h1 {font-family: 'noto-eng-b','noto-kor-b';text-align:left;font-size:18pt;border-bottom: 1px solid rgba(0,0,0,0.3);padding-bottom: 5px;margin-bottom: 20px;display: inline-block}
+.post-subsection p {font-family: 'noto-eng','noto-kor';text-align:left;font-size:12pt;padding-bottom:5px;margin-bottom:20px;display:block}
 .post-section a {color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)}
 
 .related-posts {padding:50px;border-top:1pt solid rgba(0,0,0,0.8);margin:auto;background-color: none;}
@@ -1039,17 +1037,17 @@ footer ._goto-top:hover {
 .load-posts > li {padding:10px 10px;margin:0px 10px;}
 .load-posts > li:hover {background:rgba(200,255,200,0.8)}
 .load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt}
-.load-posts > li .post-publish {margin:0px 2px!important;padding:0!important;color:black!important;font-family:"noto-eng-ii","noto-kor-ii"!important;font-size:8pt}
-.load-posts > li .post-abstract {margin:20px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:"noto-eng","noto-kor"!important;font-size:10pt;overflow:hidden;word-break:break-all;}
+.load-posts > li .post-publish {margin:0px 2px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii'!important;font-size:8pt}
+.load-posts > li .post-abstract {margin:20px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:10pt;overflow:hidden;word-break:break-all;}
 .load-posts > li .post-keywords {position:relative;list-style-type:none;margin:0px;padding:0;width:100%;display:inline-block}
 .load-posts > li .post-keyword {position:relative;background-color:rgba(200,200,200,0.5);border-radius:5px;padding:0px 3px;padding-bottom:2px;margin:0px 0px;display:inline-block;border:none}
-.load-posts > li .post-keyword a {color:black;font-family:"noto-eng","noto-kor";font-size:9pt;text-decoration:none}
-.load-posts > li .post-link {margin:0px!important;padding:0!important;color:gray!important;width:100%!important;font-family:"noto-eng","noto-kor"!important;font-size:12pt;text-decoration:none;}
+.load-posts > li .post-keyword a {color:black;font-family:'noto-eng','noto-kor';font-size:9pt;text-decoration:none}
+.load-posts > li .post-link {margin:0px!important;padding:0!important;color:gray!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:12pt;text-decoration:none;}
 .load-slice-posts > div {display:flex;margin:auto;justify-content:center}
-.load-slice-posts > div * {font-family:'noto-eng-ii';font-size:10pt;text-align:center;padding:5px}
+.load-slice-posts > div * {font-family:'noto-eng-ii','noto-kor-ii';font-size:10pt;text-align:center;padding:5px}
 .load-slice-posts > div > .first, .load-slice-posts > div > .prev {margin-left:0px;margin-right:10px;cursor:pointer}
 .load-slice-posts > div > .next, .load-slice-posts > div > .last {margin-right:0px;margin-left:10px;cursor:pointer}
-.load-slice-posts > div > .number{width:45px!important;text-align: center;font-family:'noto-eng-i';font-size:11pt;}
+.load-slice-posts > div > .number{width:45px!important;text-align: center;font-family:'noto-eng-i','noto-kor-i';font-size:11pt;}
 
 /* .maxheight-abstract-ul > li .post-abstract {height:40px;overflow:hidden} */
 
