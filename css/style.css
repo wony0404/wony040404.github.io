@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'noto-kor-b';
     /* src: url('/assets/fonts/noto-kor/NotoSansCJKkr-Bold.otf'); */
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Bold.woff');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Black.woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,8 +38,8 @@
 @font-face {
     font-family: 'noto-eng-b';
     /* src: url('fonts/noto-mono/NotoSansMono-ExtraCondensedExtraBold.ttf'); */
-    src:url('/assets/fonts/noto-sans/NotoSans-Bold.ttf');
-    font-weight: 600;
+    src:url('/assets/fonts/noto-sans/NotoSans-Black.ttf');
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {
