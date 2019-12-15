@@ -586,7 +586,7 @@ footer ._goto-top:hover {
     margin-right:0;
 }
 
-.schedule-ul li {
+/* .schedule-ul li {
     background-color: #eeeeee!important;
     border:gray 1pt solid!important;
     border-radius:10px!important;
@@ -596,7 +596,6 @@ footer ._goto-top:hover {
     display:flex;
     flex-direction: column;
     padding:20px;
-    /* margin:auto!important; */
 }
 .schedule-ul li h1{
     font-size: 14pt!important;
@@ -605,7 +604,7 @@ footer ._goto-top:hover {
 .schedule-ul li p{
     font-size: 12pt!important;
     margin:auto!important;
-}
+} */
 
 /* Type of writing */
 ._article-section hr{
