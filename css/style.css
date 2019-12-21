@@ -62,6 +62,10 @@ html, body { color: black; font-family: 'noto-eng','noto-kor' !important; height
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-break: break-all;
+}
+a {
+    display: inline;
 }
 b {
     position:relative!important;
@@ -178,7 +182,7 @@ footer ._footer-line{
 }
 footer ._footer-line h1{
     font-family: 'noto-eng','noto-kor';
-    font-size: 12pt!important;
+    font-size: 10pt!important;
     color: white;
     text-align: center;
     position: relative;
@@ -568,7 +572,7 @@ footer ._goto-top:hover {
     display: block;
     width: 90%;
     padding-left: 20px;
-    border-left: 3pt gray solid;
+    border-left: 3px gray solid;
 }
 .grid-3-1-ul > li h1 {
     font-family: 'noto-eng','noto-kor';
@@ -1008,12 +1012,14 @@ footer ._goto-top:hover {
 
 .post-section {z-index: 0;position: relative;height:auto;display:block;padding-top:50px;padding-bottom:40px;}
 .post-section * {position: relative;font-family: 'noto-eng','noto-kor';}
-.post-section hr {border:none;border-top:1px solid black;width:20%;opacity:0.5;margin:auto;margin-bottom:80px}
-.post-section > h1 {font-family: 'noto-eng-b','noto-kor-b';font-size:30px;margin:auto;text-align:center;margin-bottom:30px}
-.post-section > p {width: 40%;left:50%;transform: translateX(-50%);text-align:center;font-size:15px;font-family:'noto-eng-ii','noto-kor-ii';margin-bottom:30px}
-.post-subsection h1 {font-family: 'noto-eng-b','noto-kor-b';text-align:left;font-size:18pt;border-bottom: 1px solid rgba(0,0,0,0.3);padding-bottom: 5px;margin-bottom: 20px;display: inline-block}
-.post-subsection p {font-family: 'noto-eng','noto-kor';text-align:left;font-size:12pt;padding-bottom:5px;margin-bottom:20px;display:block}
-.post-section a {color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)}
+.post-section hr {border:none;border-top:1px solid black;width:20%;opacity:0.5;margin:auto;margin-bottom:50px}
+.post-section > h1 {font-family: 'noto-eng-b','noto-kor-b';font-size:32px;margin:auto;text-align:center;margin-bottom:10px}
+.post-section > p {width: 50%;left:50%;transform: translateX(-50%);text-align:center;font-size:15px;font-family:'noto-eng-ii','noto-kor-ii';margin-top:15px;margin-bottom:30px}
+.post-subsection {margin-bottom:45px}
+.post-subsection * {font-family: 'noto-eng','noto-kor';text-align:left;font-size:12pt;padding-bottom:5px;margin-bottom:15px;display:block}
+.post-subsection b {display:inline-block;margin-bottom:0;padding-bottom:0;font-size:inherit;}
+.post-subsection h1 {font-family: 'noto-eng-b','noto-kor-b';text-align:left;font-size:15pt;border-bottom: 1px solid rgba(0,0,0,0.3);padding-bottom: 0px;margin-bottom: 20px;display: inline-block}
+.post-section a {padding-bottom:0;margin-bottom:0;display:inline-block;color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)}
 
 .related-posts {padding:50px;border-top:1pt solid rgba(0,0,0,0.8);margin:auto;background-color: none;}
 .related-posts > h1 {position:relative;margin:0;font-family:'noto-eng-b','noto-kor-b';font-size:18pt}
@@ -1036,13 +1042,14 @@ footer ._goto-top:hover {
 .load-posts a {border:none;margin:0;padding:0;color:inherit;text-decoration:none;font-family:inherit;font-size:inherit}
 .load-posts > li {padding:10px 10px;margin:0px 10px;}
 .load-posts > li:hover {background:rgba(200,255,200,0.8)}
-.load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt}
+.load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt!important}
 .load-posts > li .post-publish {margin:0px 2px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii'!important;font-size:8pt}
-.load-posts > li .post-abstract {margin:20px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:10pt;overflow:hidden;word-break:break-all;}
+.load-posts > li .post-abstract {margin:20px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:12pt;overflow:hidden;word-break:break-all;}
 .load-posts > li .post-keywords {position:relative;list-style-type:none;margin:0px;padding:0;width:100%;display:inline-block}
 .load-posts > li .post-keyword {position:relative;background-color:rgba(200,200,200,0.5);border-radius:5px;padding:0px 3px;padding-bottom:2px;margin:0px 0px;display:inline-block;border:none}
-.load-posts > li .post-keyword a {color:black;font-family:'noto-eng','noto-kor';font-size:9pt;text-decoration:none}
-.load-posts > li .post-link {margin:0px!important;padding:0!important;color:gray!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:12pt;text-decoration:none;}
+.load-posts > li .post-keyword a {color:black;font-family:'noto-eng','noto-kor';font-size:9pt}
+.load-posts > li .show-post-body, .load-posts > li .hide-post-body, .load-posts > li .post-link{margin:0px!important;padding:0!important;color:black;font-family:'noto-eng-i','noto-kor-i';font-size:12pt;cursor:pointer}
+
 .load-slice-posts > div {display:flex;margin:auto;justify-content:center}
 .load-slice-posts > div * {font-family:'noto-eng-ii','noto-kor-ii';font-size:10pt;text-align:center;padding:5px}
 .load-slice-posts > div > .first, .load-slice-posts > div > .prev {margin-left:0px;margin-right:10px;cursor:pointer}
@@ -1052,10 +1059,10 @@ footer ._goto-top:hover {
 /* .maxheight-abstract-ul > li .post-abstract {height:40px;overflow:hidden} */
 
 .post-with-description {background:none!important;border-radius:0!important;}
-.post-with-description > li {border-radius:0px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-left:3pt solid darkgray;margin:10px 3px;padding:5px 3px}
+.post-with-description > li {border-radius:0px;border-top-right-radius:10px;border-bottom-right-radius:10px;border-left:3px solid darkgray;margin:10px 3px;padding:5px 3px}
 .post-with-description > li > div {padding:0px 10px}
 .post-with-description > li:hover {background:rgba(24,24,32,0.05)!important}
-.post-with-description .description {font-family:'noto-eng','noto-kor';font-size:12pt;color:black;margin:10px 10px;margin-bottom:0px;padding:10px 10px;border-left:3pt lightgray solid}
+.post-with-description .description {font-family:'noto-eng','noto-kor';font-size:12pt;color:black;margin:10px 10px;margin-bottom:0px;padding:10px 10px;border-left:3px lightgray solid}
 
 /* .hot-tags{background-color: rgba(24,24,32,0.9);padding:15px;border-radius:10px;margin-bottom:10px}
 .hot-tags a {border:none} */
