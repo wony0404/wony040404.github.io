@@ -12,6 +12,30 @@
     <!-- title -->
     <title>Jai Hyun Park</title>
 
+    <style>
+.story {
+    margin-bottom:40px;
+}
+.story > div {
+    width:80%;
+    margin:10px 30px;
+    margin-top:0px;
+}
+.story img {
+    width:100%;
+    height:180px;
+    object-fit: cover;
+}
+.story h1 {
+    font-family: 'noto-eng','noto-kor';
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+.story p {
+    font-family: 'noto-eng-i','noto-kor-i';
+    font-size: 13pt;
+}
+    </style>
 </head>
 <body>
     <div class='load-menubar'></div>
@@ -21,20 +45,33 @@
         <div class='_overlay' style="background-color: rgba(24,24,30, 0.8)"></div>
 
         <div class='_profile'>
-            <a href='/about.html' style='color:rgb(255,255,164)'>
+            <a class='eng' href='/about.html' style='color:rgb(255,255,164)'>
                 ABOUT
             </a>
-            <p>
+            <a class='kor' href='/about.html' style='color:rgb(255,255,164)'>
+                소개
+            </a>
+            <p class='eng'>
                 Hi, I'm <b style='font-size:30pt'>Jai Hyun Park</b>.
                 I live in <b style='font-size:22pt'>Seoul</b>, Republic of Korea.
                 I love spending time on <b style='font-size:25pt'>playing piano</b> and <b style='font-size:28pt'>programming</b style='font-size:28pt'>.
                 My favorite movie is 'Eternal Sunshine of the Spotless Mind'.
             </p>
+            <p class='kor'>
+                안녕하세요, 저는 <b style='font-size:30pt'>박재현</b>입니다.
+                <b style='font-size:22pt'>서울</b>에 삽니다.
+                여가시간에는 <b style='font-size:25pt'>피아노 연주</b>와 <b style='font-size:28pt'>프로그래밍</b style='font-size:28pt'>을 합니다.
+                가장 좋아하는 영화는 '이터널 선샤인'입니다.
+            </p>
+        </div>
 
     </header>
     <div class="_see-more">
-        <div>
+        <div class='eng'>
             See more about me
+        </div>
+        <div class='kor'>
+            더 보기
         </div>
         <img src = 'assets/icons/arrow-down.png'/>
     </div>
@@ -43,59 +80,59 @@
         <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
 
 
-        <section class="_track _content-section _article-section" id = "glance" style='background-color:rgba(255,255,164,0.8)'>
-            <div class='wide-piece subsection' style='margin-bottom:30px' id='glance-components'>
-                <h1>At a Glance</h1>
+        <section class="_track _content-section" id = "glance" style='background-color:rgba(255,255,164,0.8)'>
+            <div class='wide-piece' style='margin-bottom:30px' id='glance-components'>
+                <h1 class='eng' style='display:inline-block;font-family:"noto-eng","noto-kor";font-size:15pt;padding-bottom:3px;border-bottom:1pt solid gray;'>At a Glance</h1>
+                <h1 class='kor' style='display:inline-block;font-family:"noto-eng-b","noto-kor-b";font-size:17pt;padding:3px 5px;margin-bottom:15px;margin-left:15px;border-bottom:1pt solid gray;'>프로필</h1>
                 <ul class='grid-3-1-ul'>
                     <li id='name'>
-                        <h1>Name</h1>
-                        <p>Park, Jai Hyun</p>
+                        <h1 class='eng'>Name</h1>
+                        <p class='eng'>Park, Jai Hyun</p>
+                        <h1 class='kor'>이름</h1>
+                        <p class='kor'>박 재현</p>
                     </li>
                     <li id='hometown'>
-                        <h1>Hometown</h1>
-                        <p>Daejeon, Republic of Korea</p>
+                        <h1 class='eng'>Hometown</h1>
+                        <p class='eng'>Daejeon, Republic of Korea</p>
+                        <h1 class='kor'>출생지</h1>
+                        <p class='kor'>대전</p>
                     </li>
                     <li id='residence'>
-                        <h1>Residence</h1>
-                        <p>Seoul, Republic of Korea</p>
+                        <h1 class='eng'>Residence</h1>
+                        <p class='eng'>Seoul, Republic of Korea</p>
+                        <h1 class='kor'>거주지</h1>
+                        <p class='kor'>서울</p>
                     </li>
                     <li class='update-birth'>
-                        <h1>Age</h1>
+                        <h1 class='eng'>Age</h1>
+                        <h1 class='kor'>나이</h1>
                         <p>1994.9.21.</p>
                     </li>
                     <li>
-                        <h1>Recently Watched</h1>
-                        <p>Frozen 2</p>
+                        <h1 class='eng'>Recently Watched</h1>
+                        <p class='eng'>Frozen 2</p>
+                        <h1 class='kor'>최근 관람</h1>
+                        <p class='kor'>겨울왕국2</p>
                     </li>
                     <li>
-                        <h1>Affiliation</h1>
-                        <p>Seoul National University</p>
+                        <h1 class='eng'>Affiliation</h1>
+                        <p class='eng'>Seoul National University</p>
+                        <h1 class='kor'>소속</h1>
+                        <p class='kor'>서울대학교</p>
                     </li>
                 </ul>
             </div>
-
         </section>
 
-        <section class="_track _content-section _article-section" id = "trivia">
-            <div class='flex-block'>
-                <!-- http://jaihyunp.github.io/ -->
-                <img src='assets/imgs/1530031945830.jpg' style='max-width:400px;width:50%;margin:0px 120px;margin-bottom:50px'/>
+        <!-- <section class='_track _content-section' id='passion' style='background-color:white'>
+            나의 열정들
+        </section>
 
-                <div class='narrow-piece'>
-                    <h1 style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:23pt;text-align:left'>
-                        Trivia: A few fun facts about me
-                    </h1>
-                    <ul style='list-style-position:outside;list-style-type:square'>
-                        <li style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:14pt'>
-                            My first programming language is Java, the most familiar one is C, and the most tempting one is Haskel.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <section class='_track _content-section' id='chronicle' style='background-color:white'>
+            발자취
+        </section> -->
 
-        </section>            
-
-        <section class = '_track _content-section _article-section' id='stories' style='background-color:rgba(255,255,164,0.3)'>
+        <section class = '_track _content-section' id='stories' style='background-color:rgba(255,255,164,0.3)'>
             <!-- <h1>More about me</h1> -->
             <hr style='border:none;background:none;padding-top:20px'>
 
@@ -104,11 +141,17 @@
                     <img src='assets/imgs/20180602_img0195-min.JPG'/>
                 </div>
                 <div>
-                    <h1>Dreams / Life Goals</h1>
-                    <p>
+                    <h1 class='eng'>Dreams / Life Goals</h1>
+                    <h1 class='kor'>꿈 / 목표</h1>
+                    <p class='eng'>
                         (1)Develop creative technology that makes people happy.
                         (2)Write novels and make a movie.
                         (3)Write songs.
+                    </p>
+                    <p class='kor'>
+                        (1)순수한 아이디어로 세상을 행복하게 바꾸기<br>
+                        (2)소설 쓰기 / 영화 만들기<br>
+                        (3)자작곡 쓰기
                     </p>
                 </div>
             </div>
@@ -119,10 +162,13 @@
                     <img src='assets/imgs/20190814_205206-min.jpg'/>
                 </div>
                 <div>
-                    <h1>My Recent Life</h1>
-                    <p>
+                    <h1 class='eng'>My Recent Life</h1>
+                    <h1 class='kor'>근황</h1>
+                    <p class='eng'>
                         These days, I spend most of my time on studying mathematics, research, and constructing my personal webpage.<a href='http://jaihyunp.github.io/'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;display:inline-block'/></a>
-
+                    </p>
+                    <p class='kor'>
+                        최근 저는 수학 공부, 연구, 홈페이지<a href='http://jaihyunp.github.io/'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;display:inline-block'/></a> 제작에 대부분의 시간을 쏟고 있습니다.
                     </p>
                 </div>
             </div>
@@ -133,11 +179,15 @@
                     <img src='assets/imgs/20180916_120526-min.jpg'/>
                 </div>
                 <div>
-                    <h1>Piano</h1>
-                    <p>
+                    <h1 class='eng'>Piano</h1>
+                    <h1 class='kor'>피아노</h1>
+                    <p class='eng'>
                         I have played piano since I was 5.
                         My favorite composers are Chopin and Bach.
                         One of dreams is to compose my own song.
+                    </p>
+                    <p class='kor'>
+                        저는 다섯 살 때부터 피아노를 쳤습니다. 쇼팽과 바흐의 음악들을 좋아합니다. 언젠가 자작곡을 쓰고 싶은 꿈이 있습니다. 
                     </p>
                 </div>
             </div>
@@ -146,12 +196,17 @@
                     <img src='assets/imgs/20180623_190422-min.jpg'/>
                 </div>
                 <div>
-                    <h1>Travelings</h1>
-                    <p>
+                    <h1 class='eng'>Travelings</h1>
+                    <h1 class='kor'>여행</h1>
+                    <p class='eng'>
                         I have been
                         Waterloo, Canada and California, USA in Summer '19,
                         Ganwon-do, Korea in Spring '19, 
                         and Swiss and many other contries in Europe in Summer '18.
+                    </p>
+                    <p class='kor'>
+                        최근 저는 '19년 여름에 캐나다 워털루와 미국 캘리포니아를, 
+                        '19년 봄에 강원도를, '18년 여름에 스위스를 비롯한 동유럽 여러 국가들을 여행했습니다.
                     </p>
                 </div>
             </div>
@@ -162,10 +217,14 @@
                     <img src='assets/imgs/20180922_180827-min.jpg'/>
                 </div>
                 <div>
-                    <h1>Where I live</h1>
-                    <p>
+                    <h1 class='eng'>Where I live</h1>
+                    <h1 class='kor'>혜화동</h1>
+                    <p class='eng'>
                         My current residence is in Hyehwa-dong, Seoul, Korea. 
                         There are several traditional palaces and a number of amiable cafes around my home.
+                    </p>
+                    <p class='kor'>
+                        저는 지금 서울 혜화동에 삽니다. 집 주변에 고궁과 예쁜 카페들이 많아서 좋습니다. 
                     </p>
                 </div>
             </div>
@@ -174,14 +233,44 @@
                     <img src='assets/imgs/SNU_etl-login.jpg' />
                 </div>
                 <div>
-                    <h1>Where I Belong</h1>
-                    <p>
+                    <h1 class='eng'>Where I Belong</h1>
+                    <h1 class='kor'>서울대학교</h1>
+                    <p class='eng'>
                         I am currently in the undergraduate course at the Department of Mathematical Sciecnes, Seoul National University (SNU). 
                         I go to graduate school at SNU in 2020.
                     </p>
+                    <p class='kor'>
+                        현재 저는 서울대학교 수리과학부 학사과정에 있습니다. 서울대학교 수리과학부 석박통합과정에 2020년 진학 예정입니다.
+                    </p>
                 </div>
             </div>
-        </section>
+         </section>
+
+         <section class="_track _content-section" id = "trivia">
+            <div class='flex-block'>
+                <!-- http://jaihyunp.github.io/ -->
+                <img src='assets/imgs/1530031945830.jpg' style='max-width:400px;width:50%;margin:0px 120px;margin-bottom:50px'/>
+
+                <div class='narrow-piece'>
+                    <h1 class='eng' style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:23pt;text-align:left'>
+                        Trivia: A few fun facts about me
+                    </h1>
+                    <h1 class='kor' style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:23pt;text-align:left'>
+                        나에 대한 몇 가지 사실들
+                    </h1>
+                    <ul style='list-style-position:outside;list-style-type:square'>
+                        <li class='eng' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:14pt'>
+                            My first programming language is Java, the most familiar one is C, and the most tempting one is Haskel.
+                        </li>
+                        <li class='kor' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:14pt'>
+                            제 첫 프로그래밍 언어는 Java이고, 가장 익숙한 언어는 C이고, 가장 매력적인 언어는 Haskel입니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>            
+
+
 
         <!-- <section class="_track _content-section _article-section" id = "upcoming-events" style='background-color:rgba(184,184,184,0.8)'>
             <h1>Upcoming Events</h1>

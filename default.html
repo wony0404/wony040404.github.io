@@ -8,20 +8,39 @@
 <body>
 
     <div class='menubar' id='menubar'>
-        <div class='left-menu'><a href='.'><img src = 'assets/icons/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>
-        <div class='right-menu'>
+        <div class='left-menu'><a class='logo-link' href='.'><img src = 'assets/icons/logo.png' style='width:55px;height:55px;position:relative;margin:0;padding:0;z-index:900;margin-top:0px'/></a></div>
+        <div class='right-menu eng'>
             <img src='assets/icons/rightmenu-button.png' class='right-menu-button'/>
             <div class='right-menu-dropmenu'>
-                <div><a href='about.html'>ABOUT</a></div>
-                <div><a href='resume.html'>RESUME</a></div>
-                <div><a href='posts.html'>POSTS</a></div>
-                <div><a href='contact.html'>CONTACT</a></div>
+                <div><a href='about.html?lang=eng'>ABOUT</a></div>
+                <div><a href='resume.html?lang=eng'>RESUME</a></div>
+                <div><a href='posts.html?lang=eng'>POSTS</a></div>
+                <div><a href='contact.html?lang=eng'>CONTACT</a></div>
+                <div><a class='lang-kor' style='cursor:pointer'>한국어</a></div>
             </div>
             <div class='right-menu-menu'>
-                <div><a href='about.html'>ABOUT</a></div>
-                <div><a href='resume.html'>RESUME</a></div>
-                <div><a href='posts.html'>POSTS</a></div>
-                <div><a href='contact.html'>CONTACT</a></div>
+                <div><a href='about.html?lang=eng'>ABOUT</a></div>
+                <div><a href='resume.html?lang=eng'>RESUME</a></div>
+                <div><a href='posts.html?lang=eng'>POSTS</a></div>
+                <div><a href='contact.html?lang=eng'>CONTACT</a></div>
+                <div><a class='lang-kor' style='cursor:pointer'>한국어</a></div>
+            </div>
+        </div>
+        <div class='right-menu kor'>
+            <img src='assets/icons/rightmenu-button.png' class='right-menu-button'/>
+            <div class='right-menu-dropmenu'>
+                <div><a href='about.html?lang=kor'>소개</a></div>
+                <div><a href='resume.html?lang=kor'>이력</a></div>
+                <div><a href='posts.html?lang=kor'>글들</a></div>
+                <div><a href='contact.html?lang=kor'>연락</a></div>
+                <div><a class='lang-eng' style='cursor:pointer'>English</a></div>
+            </div>
+            <div class='right-menu-menu'>
+                <div><a href='about.html?lang=kor'>소개</a></div>
+                <div><a href='resume.html?lang=kor'>이력</a></div>
+                <div><a href='posts.html?lang=kor'>글들</a></div>
+                <div><a href='contact.html?lang=kor'>연락</a></div>
+                <div><a class='lang-eng' style='cursor:pointer'>English</a></div>
             </div>
         </div>
     </div>
@@ -29,8 +48,10 @@
     <div id='post-footer' style='padding-bottom:100px'>
         <img src='assets/imgs/profile-picture.png' style='height:85px;width:85px;margin:0 auto;transform:translateY(-50%)'/>
         <div style='margin:auto;margin-top:-35px;max-width:500px'>
-            <a href='https://jaihyunp.github.io/' style='position:relative;text-decoration:none;text-align:center;font-family:"noto-eng","noto-kor";font-size:13pt;color:black;display:inline-block;left:50%;transform:translateX(-50%);margin-bottom:5px;'>JaiHyun Park</a>
-            <p style='text-align:center;font-family:"noto-eng-i","noto-kor-i";font-size:11pt;color:black'>Seoul National University</p>
+            <a class='eng' href='https://jaihyunp.github.io/' style='position:relative;text-decoration:none;text-align:center;font-family:"noto-eng","noto-kor";font-size:13pt;color:black;display:inline-block;left:50%;transform:translateX(-50%);margin-bottom:5px;'>JaiHyun Park</a>
+            <a class='kor' href='https://jaihyunp.github.io/' style='position:relative;text-decoration:none;text-align:center;font-family:"noto-eng","noto-kor";font-size:13pt;color:black;display:inline-block;left:50%;transform:translateX(-50%);margin-bottom:5px;'>박 재현</a>
+            <p class='eng' style='text-align:center;font-family:"noto-eng-i","noto-kor-i";font-size:11pt;color:black'>Seoul National University</p>
+            <p class='kor' style='text-align:center;font-family:"noto-eng-i","noto-kor-i";font-size:11pt;color:black'>서울대학교</p>
         </div>
     </div>
 
