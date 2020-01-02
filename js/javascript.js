@@ -137,7 +137,7 @@ $(document).ready(function()
 });
 
 function update_lang(){
-	temp = location.href.split(/[?&]+/);
+	temp = location.href.split(/[?&#]+/);
 	for(var t in temp){
 		if(t > 0) {
 			data = temp[t].split('=');

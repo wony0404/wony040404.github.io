@@ -3,6 +3,7 @@
 <html lang="en" style='display:none'>
 
 <head>
+
     <noscript><meta http-equiv="refresh" content="0;url=noscript.html"></noscript>
 
     <!-- meta set -->
@@ -12,7 +13,7 @@
     <!-- title -->
     <title>Jai Hyun Park</title>
 
-    <style>
+<style>
 .story {
     margin-bottom:40px;
 }
@@ -27,16 +28,57 @@
     object-fit: cover;
 }
 .story h1 {
-    font-family: 'noto-eng','noto-kor';
-    font-size: 18pt;
+    font-family: 'noto-eng-b','noto-kor-b';
+    font-size: 15pt;
     margin-bottom: 10px;
 }
 .story p {
     font-family: 'noto-eng-i','noto-kor-i';
-    font-size: 13pt;
+    font-size: 11pt;
+    padding:0px 15px;
 }
-    </style>
+.timeline-right, .timeline-left {padding:30px 0px; margin:0 auto}
+.timeline-right {border-right:2px solid black}
+.timeline-left {border-left:2px solid black}
+.timeline-right * {text-align: right}
+.timeline-left * {text-align: left}
+.timeline-right h1 {text-align: left}
+.timeline-left h1 {text-align: right}
+.timeline-year {padding-bottom: 30px}
+.timeline-year > h1 {display:block;font-family:'noto-eng','noto-kor';font-size:20pt;padding:0px 20px;border-bottom:1.5px solid black;height:40px;width:140px}
+.timeline-right h1 {padding-right:40px}
+.timeline-left h1 {padding-left:40px}
+.timeline-year > h2 {font-family:'noto-eng','noto-kor';font-size:12pt;padding:5px 0px;padding-top:25px;width:60%}
+.timeline-year > p  {font-family:'noto-eng','noto-kor';font-size:10pt;padding:10px 10px;margin:0px;width:60%}
+.timeline-right p, .timeline-right h2 {margin-right:40px; margin-left:auto}
+.timeline-right h1 {margin-right:0px; margin-left:auto}
+.timeline-left p, .timeline-left h2 {margin-left:40px; margin-right:auto}
+.timeline-left h1 {margin-left:0px; margin-right:auto}
+.timeline-year > span {
+    height:20px;
+    width:20px;
+    border-radius:10px;
+    position:absolute;
+    top:30px;
+    background-color:white;
+    border:2px solid black;
+}
+.timeline-right span {
+    right:0;
+    transform:translate(50%);
+}
+.timeline-left span {
+    left:0;
+    transform:translate(-50%);
+}
+/* .timeline-right > .timeline-year {padding-right:50px}
+.timeline-left > .timeline-year {padding-left:50px} */
+.width100 {width:100%}
+.timeline {display:flex;flex-direction:column;}
+.timeline > hr {border:none;padding:1.2px 0;background-color:black;}
+</style>
 </head>
+
 <body>
     <div class='load-menubar'></div>
 
@@ -124,13 +166,16 @@
             </div>
         </section>
 
-        <!-- <section class='_track _content-section' id='passion' style='background-color:white'>
+        <section class='_track _content-section' id='passion' style='background-color:white'>
             나의 열정들
+            <div class='wide-piece'>
+                <div class='flex-block'>
+                    <img src='assets/imgs/20190814_205206-min.jpg' style='width:30%;height:250px;margin:auto'/>
+                    <img src='assets/imgs/20180602_img0195-min.JPG' style='width:30%;height:250px;margin:auto'/>
+                    <img src='assets/imgs/20180916_120526-min.jpg' style='width:30%;height:250px;margin:auto'/>
+                </div>
+            </div>
         </section>
-
-        <section class='_track _content-section' id='chronicle' style='background-color:white'>
-            발자취
-        </section> -->
 
         <section class = '_track _content-section' id='stories' style='background-color:rgba(255,255,164,0.3)'>
             <!-- <h1>More about me</h1> -->
@@ -244,9 +289,284 @@
                     </p>
                 </div>
             </div>
-         </section>
+        </section>
 
-         <section class="_track _content-section" id = "trivia">
+        <section class='_track _content-section' id='timeline' style='background-color:white'>
+            <div class='big-piece timeline'>
+                <div class='width100' style='border-right-style:dotted;height:20px'></div>
+                <div class='width100' style='border-right-style:dashed;height:25px'></div>
+                <div class='width100 timeline-right' id='youth'>
+                    <div class='width100 timeline-year' id='1994'>
+                        <h1>1994</h1>
+                        <span></span>
+
+                        <h2>탄생</h2>
+                        <p>9월 21일에 태어났다</p>
+                    </div>
+                    <div class='width100 timeline-year' id='1999'>
+                        <h1>1999</h1>
+                        <span></span>
+
+                        <h2>일본 거주</h2>
+                        <p>일본에서 6개월간 거주했다. 일본에서 처음으로 자전거를 탔다.</p>
+
+                        <h2>피아노</h2>
+                        <p>피아노 연주를 시작했다.</p>
+
+                    </div>
+                    <div class='width100 timeline-year' id='2000'>
+                        <h1>2000</h1>
+                        <span></span>
+
+                        <h2>대전어은초 입학</h2>
+                        <p>1학년 1반 16번이었다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2002'>
+                        <h1>2002</h1>
+                        <span></span>
+
+                        <h2>중국 여행</h2>
+                        <p>가족과 중국을 여행했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2003'>
+                        <h1>2003</h1>
+                        <span></span>
+
+                        <h2>서유럽 여행</h2>
+                        <p>가족과 이탈리아, 바티칸, 프랑스, 스위스, 영국을 여행했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2004'>
+                        <h1>2004</h1>
+                        <span></span>
+
+                        <h2>동유럽 여행</h2>
+                        <p>가족과 체코, 슬로바키아, 헝가리, 오스트리아, 폴란드를 여행했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2006'>
+                        <h1>2006</h1>
+                        <span></span>
+
+                        <h2>동남아 여행</h2>
+                        <p>가족과 캄보디아, 태국, 마카오를 여행했다.</p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class='width100 timeline-left _track' id='middle-school'>
+                    <div class='width100 timeline-year' id='2007'>
+                        <h1>2007</h1>
+                        <span></span>
+
+                        <h2>대전어은초 졸업</h2>
+                        <p>6학년 3반이었다.</p>
+
+                        <h2>대전어은중 입학</h2>
+                        <p>1학년 3반이었다.</p>
+
+                        <h2>수학 공부 시작</h2>
+                        <p>학원에서 꼴찌를 했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2008'>
+                        <h1>2008</h1>
+                        <span></span>
+
+                        <h2>KMO 중등부 예선 금상</h2>
+                        <p>한국수학올림피아드 중등부 1차시험에서 대전에서 혼자 금상을 탔다.</p>
+
+                        <h2>KMO 여름학교</h2>
+                        <p>전국의 수학인재들을 만났다.</p>
+
+                        <h2>KMO 중등부 금상</h2>
+                        <p>한국수학올림피아드 중등부 금상을 수상했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2009'>
+                        <h1>2009</h1>
+                        <span></span>
+
+                        <h2>KMO 겨울학교</h2>
+                        <p>전국의 수학인재들을 만났다.</p>
+
+                        <h2>대전시 수학 경시대회 금상</h2>
+                        <p>금상을 수상했다.</p>
+
+                        <h2>KPhO 중등부 은상</h2>
+                        <p>한국물리올림피아드 중등부 은상을 수상했다.</p>
+
+                        <h2>KESO 중등부 동상</h2>
+                        <p>한국지구과학올림피아드 중등부 동상을 수상했다.</p>
+
+                        <h2>코딩 공부 시작</h2>
+                        <p>첫 프로그래밍 언어는 자바였다.</p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class='width100 timeline-right _track' id='high-school'>
+                    <div class='width100 timeline-year' id='2010'>
+                        <h1>2010</h1>
+                        <span></span>
+
+                        <h2>대전어은중 졸업</h2>
+                        <p>3학년 6반이었다.</p>
+
+                        <h2>한국과학영재학교 입학</h2>
+                        <p>수학 및 과학 분야의 연구자를 양성하기 위한 교육기관이다. 부산에 위치했다.</p>
+
+                        <h2>KMO 은상</h2>
+                        <p>한국수학올림피아드 고등부 은상을 수상했다.</p>
+
+                        <h2>몽골 해외 봉사</h2>
+                        <p>친구들과 몽골에서 봉사활동을 진행했다. 현지인들에게 파워포인트를 강의하고, 시설들을 보수했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2011'>
+                        <h1>2011</h1>
+                        <span></span>
+                        <h2>KSA 스폰서 장학금</h2>
+                        <p>세운철강이 후원하는 KSA 스폰서 장학금을 받았다.</p>
+
+                        <h2>MMSS 캠프</h2>
+                        <p>미국 미시간대학교에서 진행한 Michigan Mathematics and Science School 캠프에 참가했다. 친구들과 함께 수학 및 프로그래밍 분야를 참여했다.</p>
+
+                        <h2>미국여행</h2>
+                        <p>MMSS캠프 이후 친구들과 미국을 여행했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2012'>
+                        <h1>2012</h1>
+                        <span></span>
+
+                        <h2>삼성 JFL 장학금</h2>
+                        <p>삼성전자가 후원하는 삼성 Junior Frontier Leadership 장학금을 받았다.</p>
+
+                        <h2>휴먼테크논문대상 수상</h2>
+                        <p>친구들과 R&E프로그램에서 연구한 영상융합, 잡음제거 연구가 휴먼테크논문대상 고등부 분야에서 각각 은상과 동상을 수상했다.</p>
+
+                        <h2>ISSMYS 캠프</h2>
+                        <p>프랑스 리옹에서 개최된 International Summer School of Mathematics for Young Students 캠프에 참가했다. 수준 높은 학생들과 함께 교육을 받았고, 존 콘웨이를 실제로 보았다.</p>
+
+                        <h2>베트남 여행</h2>
+                        <p>삼성에서 휴먼테크논문대상에 대한 혜택 중 하나로 베트남 여행을 지원해줬다. 친구들과 함께 다녀왔다.</p>
+
+                        <h2>매머드 공연</h2>
+                        <p>학내 동아리 매머드에서 키보드로 공연했다.</p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class='width100 timeline-left _track' id='college'>
+                    <div class='width100 timeline-year' id='2013'>
+                        <h1>2013</h1>
+                        <span></span>
+
+                        <h2>한국과학영재학교 졸업</h2>
+                        <p>졸업논문은 수학분야에서 삼각함수에 대해 작성했다. GPA는 3.86/4.3인데, 사실 입시가 끝난 마지막 학기가 큰 아웃라이어로 작용했다.</p>
+
+                        <h2>문예단 공연</h2>
+                        <p>서울대학교 자연과학대학 새내기 배움터에서 단과대 신입생들과 함께 공연했다. 상황극을 하고 춤을 췄다.</p>
+
+                        <h2>서울대학교 입학</h2>
+                        <p>수리과학부로 학부과정에 입학했다.</p>
+
+                        <h2>대통령과학장학금</h2>
+                        <p>한국장학재단이 후원하는 대통령과학장학금을 수령했다. 수학부분에서 선정되었다. 8학기동안 전액장학금 및 학기당 생활금 250만원이 지급되었다.</p>
+
+                        <h2>뇌출혈 공연</h2>
+                        <p>수리과학부 밴드모임 뇌출혈 중 팀 '승보'에서 드럼으로 공연했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2014'>
+                        <h1>2014</h1>
+                        <span></span>
+
+                        <h2>새내기 배움터 공연</h2>
+                        <p>새내기 배움터에서 수리과학부 밴드의 드럼, 통계학과 밴드의 키보드 객원으로 공연했다.</p>
+
+                        <h2>뇌출혈 공연</h2>
+                        <p>수리과학부 밴드모임 뇌출혈 중 팀 '승보'와 팀 '포밴'에서 각각 드럼으로 공연했다.</p>
+
+                        <h2>안동 여행</h2>
+                        <p>친구들과 즉흥적으로 안동에 1박 여행을 갔다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2015'>
+                        <h1>2015</h1>
+                        <span></span>
+
+                        <h2>전공학교 강사</h2>
+                        <p>서울대학교 수리과학부 및 통계학과 후배들에게 해석개론을 7주에 거쳐 강의했다.</p>
+
+                        <h2>IBS-CGP 캠프</h2>
+                        <p>포항공대에서 주최된 학부생 수학 캠프에 참가했다. 해당 캠프에서 서울대, 포항공대, 이화여대의 수학과 학부생들과 교류했다.</p>
+
+                        <h2>제주도 여행</h2>
+                        <p>가족들과 제주도를 여행했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2016'>
+                        <h1>2016</h1>
+                        <span></span>
+
+                        <h2>인천 여행</h2>
+                        <p>친구들과 인천, 영종도, 월미도를 여행했다.</p>
+
+                        <h2>대한민국 육군 입대</h2>
+                        <p>대한민국 육군 현역으로 입대했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2018'>
+                        <h1>2018</h1>
+                        <span></span>
+
+                        <h2>대한민국 육군 병장 만기 복무</h2>
+                        <p>육군 병장 만기 복무 및 예비군으로 전역했다.</p>
+
+                        <h2>유럽 여행</h2>
+                        <p>두 달간 유럽을 여행했다. 약 한 달간 혼자 스위스, 오스트리아, 헝가리, 체코, 독일을 여행했고, 약 한 달간 부모님과 스위스, 이탈리아, 프랑스를 여행했다.</p>
+
+                        <h2>서울대학교 암호랩 연구인턴</h2>
+                        <p>연구인턴을 시작했다. 동형암호에 대해 공부했다. 2020년 2월까지 진행했다.</p>
+
+                        <h2>전자피아노 구매</h2>
+                        <p>전자피아노를 구매했다.</p>
+                    </div>
+                    <div class='width100 timeline-year' id='2019'>
+                        <h1>2019</h1>
+                        <span></span>
+
+                        <h2>SPIA 학술 멘토</h2>
+                        <p>서울대학교와 홍콩과기대학 학부생들이 참가하는 캠프의 암호부분에서 학술 멘토 역할을 수행했다. 암호화된 데이터 위에서의 머신러닝에 대해 연구했다.</p>
+
+                        <h2>SAC 2019 채택 및 발표</h2>
+                        <p>암호화된 데이터에 대한 효율적인 클러스터 방법에 대한 연구가 Selected Areas in Cryptography 2019에 채택되었다. 캐나다 워털루 대학교에서 직접 발표했다.</p>
+
+                        <h2>샌프란시스코 및 캐나다 여행</h2>
+                        <p>샌프란시스코와 나이아가라 폭포를 여행했다.</p>
+
+                        <h2>동형암호 표준화 워크샵 참가</h2>
+                        <p>미국 캘리포니아 산타클라라에서 개최된 동형암호 표준화 워크샵에 참가했다.</p>
+
+                        <h2>KMS 가을 연구발표회 발표</h2>
+                        <p>암호화된 데이터에 대한 효율적인 클러스터 방법에 대한 연구를 대한수학회 가을 정기 연구발표회의 암호 분야에서 발표했다. 홍익대학교에서 발표했다.</p>
+                    </div>
+                </div>
+
+                <hr />
+                <div class='width100 timeline-right _track' id='graduate-school'>
+                    <div class='width100 timeline-year' id='2020'>
+                        <h1>2020</h1>
+                        <span></span>
+
+                        <h2>서울대학교 학부 졸업</h2>
+                        <p>예정.</p>
+
+                        <h2>서울대학교 석박통합과정 입학</h2>
+                        <p>수리과학부 예정.</p>
+                    </div>
+                </div>
+                <div class='width100' style='border-right-style:dashed;height:25px'></div>
+                <div class='width100' style='border-right-style:dotted;height:20px'></div>
+            </div>
+        </section>
+
+        <section class="_track _content-section" id = "trivia">
             <div class='flex-block'>
                 <!-- http://jaihyunp.github.io/ -->
                 <img src='assets/imgs/1530031945830.jpg' style='max-width:400px;width:50%;margin:0px 120px;margin-bottom:50px'/>
@@ -255,15 +575,15 @@
                     <h1 class='eng' style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:23pt;text-align:left'>
                         Trivia: A few fun facts about me
                     </h1>
-                    <h1 class='kor' style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:23pt;text-align:left'>
+                    <h1 class='kor' style='font-family: "noto-eng-b","noto-kor-b";margin-bottom:30px;font-size:20pt;text-align:left'>
                         나에 대한 몇 가지 사실들
                     </h1>
                     <ul style='list-style-position:outside;list-style-type:square'>
-                        <li class='eng' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:14pt'>
-                            My first programming language is Java, the most familiar one is C, and the most tempting one is Haskel.
+                        <li class='eng' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:12pt'>
+                            My first programming language is Java, the most familiar one is C, and the most tempting one is Haskell.
                         </li>
-                        <li class='kor' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:14pt'>
-                            제 첫 프로그래밍 언어는 Java이고, 가장 익숙한 언어는 C이고, 가장 매력적인 언어는 Haskel입니다.
+                        <li class='kor' style='text-align:left;font-family:"noto-eng","noto-kor";margin-bottom:15px;font-size:12pt'>
+                            제 첫 프로그래밍 언어는 Java이고, 가장 익숙한 언어는 C이고, 가장 매력적인 언어는 Haskell입니다.
                         </li>
                     </ul>
                 </div>
