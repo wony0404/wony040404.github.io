@@ -534,7 +534,7 @@ footer ._goto-top:hover {
 .flex-block {
     display:flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     margin:auto;
     overflow: auto;
 }
