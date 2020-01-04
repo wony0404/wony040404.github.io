@@ -14,16 +14,26 @@
     <link rel='shortcut icon' href='assets/icons/logo-fill.png' type='image/x-icon'></link>
 
 <style>
-._article-section hr{
-    border:none;border-top:1px solid black;width:20%;opacity:0.5;margin:auto;
+/* ._article-section hr{
+    border:none;border-top:1px solid black;
+    width:50%;
+    max-width:150px;
+    opacity:0.5;margin:auto;
     margin-bottom:80px;
-}
+} */
+/* ._article-section {} */
 ._article-section > h1{
+    display:inline-block;
     font-family: 'noto-eng-b','noto-kor-b';
-    font-size:30px;
+    font-size:22pt;
     margin:auto;
     text-align:center;
-    margin-bottom:30px;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 15px 15px;
+    padding-bottom:15px;
+    margin-bottom:70px;
+    border-bottom:1pt solid rgba(0,0,0,0.4)
 }
 ._article-section > p{
     width: 40%;
@@ -34,19 +44,82 @@
 }
 ._article-section > .subsection > h1 {
     font-family: 'noto-eng-b','noto-kor-b';
-    text-align:left;font-size:18pt;
+    text-align:left;font-size:15pt;
     border-bottom: 1px solid rgba(0,0,0,0.3);
     padding-bottom: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 ._article-section > .subsection > p {
     font-family: 'noto-eng-i','noto-kor-i';
-    text-align:left;font-size:11pt;
+    text-align:left;font-size:10pt;
     padding-bottom: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
 }
+
+.brief-ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+.brief-ul > li{
+    margin-bottom:20px;
+    display: list-item;
+    margin-left:20px;
+}
+.brief-ul > li h1{
+    font-family: 'noto-eng-b','noto-kor-b';
+    /* font-weight:600; */
+    font-size: 12pt;
+    margin-bottom:5px;
+}
+.brief-ul > li p{
+    font-family: 'noto-eng-i','noto-kor-i';
+    /* margin-bottom:2px; */
+    font-size: 10pt;
+}
+
+.detail-ul > li{
+    display:flex;
+    margin-bottom: 20px;
+    width:100%;
+}
+.detail-ul .info-tag{
+    position: relative;
+    display:block;
+    width:27%;
+    margin-top:0;
+    margin-bottom:auto;
+    margin-right:auto;
+    margin-left:0;
+    margin-bottom: 8px;
+}
+.detail-ul .info-tag > h1 {
+    font-size:12pt;
+    font-family:'noto-eng-b','noto-kor-b';
+    margin-bottom: 5px;
+}
+.detail-ul .info-tag > p {
+    font-family:'noto-eng-ii','noto-kor-ii';
+    font-size:10pt;
+}
+.detail-ul .description {
+    position: relative;
+    width:67.5%;
+    margin-top:0;
+    margin-bottom:auto;
+    margin-right:0;
+    margin-left:auto;
+}
+.detail-ul .description > h1 {
+    font-family: 'noto-eng','noto-kor';
+    font-size: 10pt;
+    margin-bottom:5px;
+}
+.detail-ul .description > p {
+    font-family: 'noto-eng-i','noto-kor-i';font-size: 10pt
+}
+
 </style>
 </head>
 
@@ -124,7 +197,6 @@
         <section class="_track _content-section _article-section" id = "experience" style='background-color:rgba(180,180,230,0.2)'>
             <h1 class='eng'>Experience</h1>
             <h1 class='kor'>커리어</h1>
-            <hr>
         
             <div id='education' class='big-piece subsection'>
                 <h1 class='eng'>Education</h1>
@@ -257,7 +329,6 @@
         <section class="_track _content-section _article-section " id = "research">
             <h1 class='eng'>Research</h1>
             <h1 class='kor'>연구</h1>
-            <hr>
         
             <div class = 'big-piece subsection'>
                 <h1 class='eng'>Publications</h1>
@@ -314,7 +385,6 @@
         <section class="_track _content-section _article-section " id = "awards" style='background-color:rgba(180,180,230,0.2)'>
             <h1 class='eng'>Awards</h1>
             <h1 class='kor'>수상내역</h1>
-            <hr>
         
             <div class = 'big-piece subsection'>
                 <h1 class='eng'>Academic Awards</h1>

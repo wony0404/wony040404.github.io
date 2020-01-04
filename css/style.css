@@ -467,68 +467,6 @@ footer ._goto-top:hover {
 }
 
 
-/* Section Component */
-.brief-ul{
-    list-style-type: square;
-    list-style-position: outside;
-}
-.brief-ul > li{
-    margin-bottom:30px;
-    display: list-item;
-    margin-left:20px;
-}
-.brief-ul > li h1{
-    font-family: 'noto-eng-b','noto-kor-b';
-    /* font-weight:600; */
-    font-size: 14pt;
-    margin-bottom:5px;
-}
-.brief-ul > li p{
-    font-family: 'noto-eng-i','noto-kor-i';
-    margin-bottom:2px;
-    font-size: 11pt;
-}
-
-.detail-ul > li{
-    display:flex;
-    margin-bottom: 40px;
-    width:100%;
-}
-.detail-ul .info-tag{
-    position: relative;
-    display:block;
-    width:27%;
-    margin-top:0;
-    margin-bottom:auto;
-    margin-right:auto;
-    margin-left:0;
-    margin-bottom: 8px;
-}
-.detail-ul .info-tag > h1 {
-    font-size:13pt;
-    font-family:'noto-eng-b','noto-kor-b';
-    margin-bottom: 5px;
-}
-.detail-ul .info-tag > p {
-    font-family:'noto-eng-ii','noto-kor-ii';
-    font-size:11pt;
-}
-.detail-ul .description {
-    position: relative;
-    width:67.5%;
-    margin-top:0;
-    margin-bottom:auto;
-    margin-right:0;
-    margin-left:auto;
-}
-.detail-ul .description > h1 {
-    font-family: 'noto-eng','noto-kor';
-    font-size: 11pt;
-    margin-bottom:5px;
-}
-.detail-ul .description > p {
-    font-family: 'noto-eng-i','noto-kor-i';font-size: 11pt
-}
 
 .flex_r-block,
 .flex-block {
