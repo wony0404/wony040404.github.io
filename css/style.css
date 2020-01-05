@@ -638,20 +638,6 @@ footer ._goto-top:hover {
         grid-template-columns: 50% 50%!important;
     }
 
-    .detail-ul li{
-        display:block;
-    }
-
-    .detail-ul .info-tag {
-        width: 100%;
-    }
-    .detail-ul .description{
-        display:block;
-        margin:auto;
-        margin-top: 10px;
-        width: 100%;
-    }
-
 }
 @keyframes wiggle {
     0% {

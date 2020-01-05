@@ -1,4 +1,4 @@
-var versionUpdate='0.1.18';
+var versionUpdate='0.1.19';
 var num_rows = 5;
 var activeSection;
 var lang = 'kor';

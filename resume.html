@@ -30,8 +30,7 @@
     text-align:center;
     left:50%;
     transform: translateX(-50%);
-    padding: 15px 15px;
-    padding-bottom:15px;
+    padding: 10px 12px;
     margin-bottom:70px;
     border-bottom:1pt solid rgba(0,0,0,0.4)
 }
@@ -87,25 +86,27 @@
 .detail-ul .info-tag{
     position: relative;
     display:block;
-    width:27%;
+    width:200px;
     margin-top:0;
     margin-bottom:auto;
-    margin-right:auto;
     margin-left:0;
-    margin-bottom: 8px;
+    margin-right:auto;
 }
 .detail-ul .info-tag > h1 {
     font-size:12pt;
     font-family:'noto-eng-b','noto-kor-b';
     margin-bottom: 5px;
+    text-align: left!important;
 }
 .detail-ul .info-tag > p {
     font-family:'noto-eng-ii','noto-kor-ii';
     font-size:10pt;
+    text-align: left!important;
 }
 .detail-ul .description {
     position: relative;
-    width:67.5%;
+    width:100%;
+    width: 500px;
     margin-top:0;
     margin-bottom:auto;
     margin-right:0;
@@ -115,9 +116,17 @@
     font-family: 'noto-eng','noto-kor';
     font-size: 10pt;
     margin-bottom:5px;
+    text-align: left!important;
 }
 .detail-ul .description > p {
-    font-family: 'noto-eng-i','noto-kor-i';font-size: 10pt
+    font-family: 'noto-eng-i','noto-kor-i';font-size: 10pt;
+    text-align: left!important;
+}
+@media screen and (max-width: 1000px) {
+    .detail-ul > li {margin-bottom: 30px}
+    .detail-ul .info-tag{width:100%;margin-bottom:5px}
+    .detail-ul .info-tag > h1{margin-bottom:0px}
+    .detail-ul .description{width:100%}
 }
 
 </style>
@@ -202,7 +211,7 @@
                 <h1 class='eng'>Education</h1>
                 <h1 class='kor'>학력</h1>
                 <ul class='detail-ul'>
-                    <li>
+                    <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>Seoul National University</h1>
                             <h1 class='kor'>서울대학교</h1>
@@ -228,7 +237,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>Korea Science Academy</h1>
                             <h1 class='kor'>한국과학영재학교</h1>
@@ -258,7 +267,7 @@
                 <h1 class='eng'>Work Experience</h1>
                 <h1 class='kor'>경력</h1>
                 <ul class='detail-ul'>
-                    <li>
+                    <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>2019 SPIA - Academic Mentor</h1>
                             <h1 class='kor'>2019 SPIA - 학술 멘토</h1>
@@ -280,7 +289,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>Seoul National University - Research Intern</h1>
                             <h1 class='kor'>서울대학교 - 연구 인턴</h1>
@@ -302,7 +311,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>Republic of Korea Army - Surgeant</h1>
                             <h1 class='kor'>대한민국 육군</h1>
