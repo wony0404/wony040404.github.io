@@ -1,7 +1,7 @@
-var versionUpdate='0.1.19';
+var versionUpdate='0.1.20';
 var num_rows = 5;
 var activeSection;
-var lang = 'kor';
+var lang = 'eng';
 var langs = ['eng','kor']
 function loadMenubar() {
 	$('.load-menubar').load('default.html #menubar', function(){
