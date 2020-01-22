@@ -19,20 +19,19 @@
 
 <body>
 
-    <div class='load-menubar'></div>
+    <div class='load-menubar' style='z-index:999;width:100%'></div>
+    <!-- <div class='_overlay' style='width:100%;height:90px;z-index:990;background-color:rgb(24,24,32)'></div> -->
 
     <!-- header -->
-    <header class="_track post-head" id='header'>
-        <div style="z-index:100;height:100px;width:100%;background-image:url(assets/imgs/20180922_183635-min.jpg)">
-            <div class='_overlay' style='background-color:rgba(24,24,32,0.8)'></div>
-        </div>
+    <header class="_track post-head" id='header'  style='background-image:url(assets/imgs/20191005_200341-min.jpg)'>
+        <div class='_overlay' style='background-color:rgba(24,24,32,0.6)'></div>
 
-        <div class='big-piece post-info'>
+        <div class='wide-piece post-info'>
             <p class='post-publish' id='post-publish'>
                 PUBLISHED: DEC 20, 2019 BY <a href='http://jaihyunp.github.io/'>JAIHYUN</a>
             </p>
             <div class='post-title' id='post-title'>
-                <p class='kor'>암호화된 상태로 데이터 분류하기</p>
+                <p class='kor'>암호화된 데이터 분류하기</p>
                 <p class='eng'>Classifying Encrypted Data</p>
             </div>
             <ul class='post-keywords' id='post-keywords'>
@@ -41,19 +40,6 @@
                 <li class='post-keyword'><a href='tags.html#clustering'>clustering</a></li>
             </ul>
             <p class='update-time post-update'></p>
-            <div id='post-abstract' class='post-abstract'>
-                <p class='kor'>
-                    2018.10.~2019.5.<br>
-                    암호화된 상태에서 데이터를 분류하는 방법을 연구했다. 
-                    구체적으로, '동형암호'로 암호화된 데이터들을 '클러스터링'하는 비교적 빠른 알고리즘을 제안했다. 
-                    이 연구를 활용하면 민감한 개인정보들을 서버에 암호화해서 저장해도, 정보유출 없이 클러스터 결과를 제공받을 수 있다. 
-                </p>
-            </div>
-            <p>
-                이 연구는 박재현 (글쓴이, 서울대), 김두형 연구원님 (서울대), 천정희 교수님 (서울대)이 함께 연구했고, 
-                Selected Areas in Cryptography 2019에 채택되어 박재현 (서울대)이 발표했다. 
-                전체 논문은 [CKP19] "Towards a Practical Cluster Analysis over Encrypted Data" (<a href='https://eprint.iacr.org/2019/465.pdf'>link</a>)에서 볼 수 있다.
-            </p>
         </div>
 
     </header>
@@ -78,9 +64,27 @@
         <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
         <hr style='border:none!important'>
 
-
         <div class='post-body'>
-            <section class = 'big-piece _track' id='purpose'>
+            <section class='wide-piece'>
+                <div class='post-abstract' id='post-abstract'>
+                    <p class='kor'>
+                        2018.10.~2019.5.
+                        암호화된 상태에서 데이터를 분류하는 방법을 연구했다. 
+                        구체적으로, '동형암호'로 암호화된 데이터들을 '클러스터링'하는 비교적 빠른 알고리즘을 제안했다. 
+                        이 연구를 활용하면 민감한 개인정보들을 서버에 암호화해서 저장해도, 정보유출 없이 클러스터 결과를 제공받을 수 있다. 
+                    </p>
+                    <p class='eng'>
+                        2018.10.~2019.5.
+                    </p>
+                </div>
+
+                <p class='post-meta'>※ 이 연구는 박재현 (글쓴이, 서울대), 김두형 연구원님 (서울대), 천정희 교수님 (서울대)이 함께 연구했고, 
+                    Selected Areas in Cryptography 2019에 채택되어 박재현 (서울대)이 발표했다. 
+                    전체 논문은 [CKP19] "Towards a Practical Cluster Analysis over Encrypted Data" (<a href='https://eprint.iacr.org/2019/465.pdf'>link</a>)에서 볼 수 있다.
+                </p>
+            </section>
+            
+            <section class = 'wide-piece _track' id='purpose'>
                 <h2>목적</h2>
                 <p>
                     구글포토에 사진을 백업하면, 구글포토는 자동으로 사진을 분류해준다. 사용자는 인물 / 장소 / 유형 등을 기준으로 특정 특징을 가진 사진들만을 볼 수 있다. 비슷하게 데이터들을 서버에 넘기면, 데이터를 분류해주는 서비스가 많다. 하지만 그 편리한 서비스를 위해 구글포토에 모든 사진을 저장할 수는 없다. 잠재적인 사진 유출의 위험이 도사리고 있기 때문이다.
@@ -93,7 +97,7 @@
                 </p>
             </section>
 
-            <section class="_track big-piece" id="preliminary">
+            <section class="_track wide-piece" id="preliminary">
                 <h2>배경지식</h2>
 
                 <h4>클러스터링</h4>

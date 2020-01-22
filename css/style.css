@@ -653,20 +653,22 @@ footer ._goto-top:hover {
 
 
         
-.post-head {background-color:white}
+.post-head {background-color:none;border-bottom:1pt solid gray;background-color:rgb(24,24,32);}
 .post-head .post-info *{position:relative}
-.post-head .post-info{position:relative;margin-top:180px;margin-bottom:100px;z-index:900;text-align:left}
-.post-head .post-publish {position:relative;text-align:left;margin:0;margin-right:auto;font-family:'noto-eng','noto-kor';font-size:11pt;color:black}
+.post-head .post-info {position:relative;margin-top:130px;z-index:900;text-align:left;margin-bottom:50px;}
+.post-head .post-publish {position:relative;text-align:left;margin:0;margin-right:auto;font-family:'noto-eng','noto-kor';font-size:11pt;color:white}
 .post-head .post-publish a {color:inherit;text-decoration:none;font-family:inherit;font-size:inherit}
-.post-head .post-title {position:relative;font-family:'noto-eng-b','noto-kor-b';font-size:35pt;padding:0;margin:0px;color:black}
+.post-head .post-title {position:relative;font-family:'noto-eng-b','noto-kor-b';font-size:32pt;padding:0;margin:0px;color:white}
 .post-head .post-keywords {position:relative;list-style-type:none;margin:0px 0px;padding:0;width:100%;display:inline-block}
-.post-head .post-keyword {position:relative;background-color:rgba(24,24,32,0.1);border-radius:5px;padding:0px 6px;padding-bottom:2px;margin:5px 5px;display:inline-block}
-.post-head .post-keyword a {color:rgb(50,50,58);font-family:'noto-eng','noto-kor';font-size:10pt;text-decoration:none}
-.post-head .post-update {position:relative;text-align:left;margin:30px 0;margin-right:auto;font-family:'noto-eng-ii','noto-kor-ii';font-size:9pt;color:black} 
-.post-head .post-abstract {margin:50px auto;text-align:left;color:black;font-family:'noto-eng','noto-kor';font-size:13pt;line-height:1.8;padding:5px 15px;border-left:5px solid gray}
-.post-head p {font:inherit;}
+.post-head .post-keyword {position:relative;background-color:rgba(240,240,210,0.2);border-radius:5px;padding:0px 6px;padding-bottom:2px;
+    margin:0px;margin-right:5px;display:inline-block}
+.post-head .post-keyword a {color:rgb(220,220,210);font-family:'noto-eng','noto-kor';font-size:10pt;text-decoration:none}
+.post-head .post-update {position:relative;text-align:left;margin:10px 0;margin-right:auto;font-family:'noto-eng-ii','noto-kor-ii';font-size:9pt;color:white} 
+@media screen and (max-width: 1000px) {
+    .post-head .post-title {font-size:24pt}
+}
 
-.post-section {z-index: 0;position: relative;height:auto;display:block;}
+/* .post-section {z-index: 0;position: relative;height:auto;display:block}
 .post-section *, .post-subsection * {position:relative;font-family:'noto-eng','noto-kor';line-height:1.7;text-align:left}
 .post-section hr {border:none;border-top:1px solid black;width:20%;opacity:0.5;margin:auto;margin-bottom:50px}
 .post-section > h1 {font-family: 'noto-eng','noto-kor';font-size:32pt;margin:auto;text-align:left;margin-bottom:30px}
@@ -675,26 +677,28 @@ footer ._goto-top:hover {
 .post-subsection * {font-family: 'noto-eng','noto-kor';text-align:left;font-size:12pt;padding-bottom:5px;margin-bottom:15px;display:block}
 .post-subsection b {display:inline-block;margin-bottom:0;padding-bottom:0;font-size:inherit;}
 .post-subsection h1 {font-family: 'noto-eng-b','noto-kor-b';text-align:left;font-size:15pt;padding-bottom: 0px;margin-bottom:10px;display: inline-block}
-.post-section a, .post-subsection a {padding-bottom:0;margin-bottom:0;display:inline-block;color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)}
+.post-section a, .post-subsection a {padding-bottom:0;margin-bottom:0;display:inline-block;color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)} */
 
 .post-body{width:100%}
 .post-body, .post-body *{position:relative;display:block;text-decoration:none;font-size:12pt;font-family:'noto-eng','noto-kor';line-height:1.7;text-align:left;padding:0;margin:0 auto;color:black}
 .post-body a {display:inline-block;font-size:inherit;font-family:inherit;border-bottom: dashed 1pt rgba(0,0,0,0.6);color:inherit}
 .post-body b {display:inline-block;font-size:inherit;font-family:'noto-eng-b','noto-kor-b'}
-.post-body section{margin-bottom:80px}
-.post-body h1 {display:block;font-size:25pt;font-family:'noto-eng-b','noto-kor-b';margin-bottom:25px}
-.post-body h2 {display:block;font-size:25pt;font-family:'noto-eng','noto-kor';margin-bottom:25px}
-.post-body h3 {display:block;font-size:15pt;font-family:'noto-eng-b','noto-kor-b';margin-bottom:10px}
-.post-body h4 {display:block;font-size:15pt;font-family:'noto-eng','noto-kor';margin-bottom:10px}
+.post-body section{margin:40px auto}
+.post-body h1 {display:block;font-size:25pt;font-family:'noto-eng-b','noto-kor-b';margin-bottom:10px}
+.post-body h2 {display:block;font-size:25pt;font-family:'noto-eng','noto-kor';margin-bottom:10px}
+.post-body h3 {display:block;font-size:15pt;font-family:'noto-eng-b','noto-kor-b';margin-bottom:8px}
+.post-body h4 {display:block;font-size:15pt;font-family:'noto-eng','noto-kor';margin-bottom:8px}
 .post-body h5 {display:block;font-size:12pt;font-family:'noto-eng-b','noto-kor-b';margin-bottom:5px}
 .post-body h6 {display:block;font-size:12pt;font-family:'noto-eng','noto-kor';margin-bottom:5px}
-.post-body p {display:inline-block;font-size:12pt;font-family:'noto-eng','noto-kor';margin-bottom:10px;;white-space:pre-line;margin-top:-20pt!important}
+.post-body p {display:inline-block;font-size:11pt;font-family:'noto-eng','noto-kor';margin-bottom:10px;}
 .post-body hr {background:none;border:none;margin:0;padding:0;width:100%}
+.post-body .post-abstract {margin:20px auto;text-align:left;padding:10px 15px;border-left:5px solid gray}
+.post-body .post-meta {font-family:'noto-eng-i','noto-kor-i';font-size:10pt}
 
 .related-posts {border-top:1pt solid black}
-.related-posts > h1 {font-family:"noto-eng-b","noto-kor-b";font-size:20pt;color:black;margin:15px 0px;margin-top:60px;padding-bottom:5px;border-bottom:1pt solid rgba(0,0,0,0.3);display:inline-block}
+/* .related-posts > h1 {font-family:"noto-eng-b","noto-kor-b";font-size:20pt;color:black;margin:15px 0px;margin-top:60px;padding-bottom:5px;border-bottom:1pt solid rgba(0,0,0,0.3);display:inline-block} */
 
-.fs0{font-size:10pt!important}
+/* .fs0{font-size:10pt!important}
 .fs1{font-size:12pt!important}
 .fs2{font-size:13pt!important}
 .fs3{font-size:15pt!important}
@@ -717,30 +721,36 @@ footer ._goto-top:hover {
 .mt2{margin-top:15px!important}
 .mt3{margin-top:30px!important}
 .mt4{margin-top:50px!important}
-.mt5{margin-top:80px!important}
+.mt5{margin-top:80px!important} */
 
 .post-footer{margin-top:80px;background-color:rgba(220,220,220,0.5);width:100%}
 
-.load-tagged-posts {padding:50px 0px;border-bottom:1pt gray dashed}
-.load-tagged-posts > h1 {font-family:'noto-eng-b','noto-kor-b';font-size:20pt;text-align:center;color:black}
+.load-tagged-posts {padding:50px 0px;border-bottom:1pt gray dashed;margin:0 auto}
+.load-tagged-posts > h1 {text-decoration:underline;font-family:'noto-eng-b','noto-kor-b';font-size:20pt;text-align:center;color:black;text-transform:uppercase}
 .load-tagged-posts > ul {list-style-type:square;list-style-position: outside;}
 .load-tagged-posts > ul > li a {font-family:'noto-eng','noto-kor';font-size:12pt;text-align:left;color:black;text-decoration:none;}
 
 /* .load-posts {width:100%;margin-bottom:10px} */
 .load-posts {width:100%;list-style-type:none}
-.load-posts > li .load-post-title, .load-posts > li .load-post-abstract {font-size:15pt;font-family:'noto-eng-b','noto-kor-b';color:red}
+.load-posts > li .load-post-title {font-size:15pt;font-family:'noto-eng-b','noto-kor-b';color:red}
 .load-posts a {border:none;margin:0;padding:0;color:inherit;text-decoration:none;font-family:inherit;font-size:inherit}
 .load-posts > li {padding:10px 10px;margin:0px 10px;}
 .load-posts > li:hover {background:rgba(200,255,200,0.8)}
 .load-posts > li * {margin:0;padding:0}
 .load-posts > li p {font:inherit}
-.load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt!important}
-.load-posts > li .post-publish {margin:0px 2px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii'!important;font-size:8pt}
-.load-posts > li .post-abstract {margin:20px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor'!important;font-size:12pt;overflow:hidden;word-break:break-all}
+.load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt}
+.load-posts > li .post-title:hover {text-decoration:underline;}
+.load-posts > li .post-publish {margin:2px 2px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii';font-size:8pt}
+.load-posts > li .post-abstract {margin:10px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor';font-size:11pt;overflow:hidden;word-break:break-all}
 .load-posts > li .post-keywords {position:relative;list-style-type:none;margin:0px;padding:0;width:100%;display:inline-block}
 .load-posts > li .post-keyword {position:relative;background-color:rgba(200,200,200,0.5);border-radius:5px;padding:0px 3px;padding-bottom:2px;margin:0px 0px;margin-bottom:10px;display:inline-block;border:none}
 .load-posts > li .post-keyword a {color:black;font-family:'noto-eng','noto-kor';font-size:9pt}
 .load-posts > li .show-post-abstract, .load-posts > li .hide-post-abstract, .load-posts > li .post-link{margin:0px 0px!important;padding:0!important;color:black;font-family:'noto-eng-i','noto-kor-i';font-size:12pt;cursor:pointer}
+
+.load-recent-posts > li {margin-bottom:30px}
+.load-recent-posts > li .post-title{font-size:18pt}
+.load-recent-posts > li .post-publish{font-family:'noto-eng','noto-kor';font-size:10pt}
+.load-recent-posts > li .post-abstract{font-family:'noto-eng-i','noto-kor-i'}
 
 .load-slice-posts > div {display:flex;margin:auto;justify-content:center}
 .load-slice-posts > div * {font-family:'noto-eng-ii','noto-kor-ii';font-size:10pt;text-align:center;padding:5px}
