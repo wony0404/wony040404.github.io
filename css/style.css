@@ -633,7 +633,7 @@ footer ._goto-top:hover {
         display:grid;
         grid-template-columns: 50% 50%!important;
     }
-
+    .load-post-footer .post-footer-name {text-align:center!important;margin-top:10px}
 }
 @keyframes wiggle {
     0% {
@@ -654,7 +654,7 @@ footer ._goto-top:hover {
 .post-head .post-info {position:absolute;z-index:900;text-align:left;top:50%;right:50%;transform:translate(50%,-50%)}
 .post-head .post-publish {position:relative;text-align:left;margin:0;margin-right:auto;font-family:'noto-eng','noto-kor';font-size:11pt;color:white;text-align:center}
 .post-head .post-publish a {color:inherit;text-decoration:none;font-family:inherit;font-size:inherit}
-.post-head .post-title {position:relative;font-family:'noto-eng-b','noto-kor-b';font-size:32pt;padding:0;margin:0px;color:white;text-align:center;word-break: break-all;}
+.post-head .post-title {position:relative;font-family:'noto-eng-b','noto-kor-b';font-size:32pt;padding:0;margin:0px;color:white;text-align:center;word-break: normal;}
 .post-head .post-keywords {position:relative;list-style-type:none;margin:0px 0px;padding:0;padding-top:5px;width:100%;display:inline-block;text-align:center}
 .post-head .post-keyword {position:relative;background-color:rgba(240,240,210,0.4);border-radius:5px;padding:0px 6px;padding-bottom:2px;
     margin:0px;margin-right:5px;display:inline-block}
@@ -725,7 +725,7 @@ footer ._goto-top:hover {
 .mt4{margin-top:50px!important}
 .mt5{margin-top:80px!important} */
 
-.post-footer{background-color:rgb(220,220,220);width:100%;padding:0;margin:0;border-bottom:1pt solid rgb(24,24,32)}
+.post-footer{background-color:white;width:100%;padding:0;margin:0;border-bottom:1pt solid rgb(24,24,32)}
 
 .load-tagged-posts {padding:50px 0px;border-bottom:1pt gray dashed;margin:0 auto}
 .load-tagged-posts > h1 {text-decoration:underline;font-family:'noto-eng-b','noto-kor-b';font-size:20pt;text-align:center;color:black;text-transform:uppercase}

@@ -24,11 +24,11 @@
 
     <!-- header -->
     <header class="_track post-head tall-header" id='header'  style='background-image:url(assets/imgs/20191005_200341-min.jpg)'>
-        <div class='_overlay' style='background-color:rgba(24,24,32,0.7)'></div>
+        <div class='_overlay' style='background-color:rgba(24,24,32,0.8)'></div>
 
         <div class='narrow-piece post-info'>
             <p class='post-publish' id='post-publish'>
-                JAN 24, 2020 • <a href='http://jaihyunp.github.io/'>JAIHYUN</a>
+                JAN 25, 2020 • <a href='http://jaihyunp.github.io/'>JAIHYUN</a>
             </p>
             <div class='post-title' id='post-title'>
                 <p class='kor'>블로그 시작!</p>
@@ -80,7 +80,7 @@
         <hr style='border:none!important'>
 
         <div class='post-body'>
-            <section class='narrow-piece'>
+            <section class='big-piece'>
                 <div class='post-abstract' id='post-abstract'>
                     <p class='kor'>
                         우와, 내 첫 포스트다! 생각, 추억, 지식을 저장하고 표현하기 위해 블로그를 시작한다. 심지어 직접 코딩한 개인 페이지다. 물론, 여전히 계획 및 보완 중인 점들도 많다.
@@ -130,7 +130,7 @@
                 <h6 class='kor'>개인 페이지를 제작하자</h6>
                 <h6 class='eng'>Why I've Coded My Page</h6>
                 <p class='kor'>
-                    사실 나의 목표에 부합하는 플랫폼은 이미 많다. 하지만 개인 제작 홈페이지는 뚜렷한 장점이 있고, 그래서 나는 개인 사이트를 직접 코딩했다. (반대로 말하면, 내 개인 페이지는 아래의 면들에서 타 플랫폼보다 뛰어나야 한다)
+                    사실 나의 목표에 부합하는 플랫폼은 이미 많다. 하지만 개인 제작 홈페이지는 뚜렷한 장점이 있고, 그래서 나는 개인 사이트를 직접 코딩했다 (반대로 말하면, 내 개인 페이지는 아래의 면들을 특히 신경썼다).
                 </p>
                 <p class='eng'>
                     In fact, there are already many platforms for my purposes. 
@@ -170,7 +170,7 @@
                     한편 웹 코딩에 많은 시간을 투자할 수 없었고, 특히 서버 사이드 없이 코딩하고 싶었다. 리액트를 조금 건드려보다가, 우선 jQuery정도로만 코딩했다. Github을 통해 호스팅했지만, Github 블로그들이 많이 사용하는 Jekyll은 사용하지 않았다. 
                 </p>
                 <p class='eng'>
-                    However, I did not have much time to study web coding, and also I wanted to make my page without server-side coding. (at the beginning, I wanted my page to work properly in offline too) After a little effort to learn React, I ended up coding my page with jQuery first.
+                    However, I did not have much time to study web coding, and also I wanted to make my page without server-side coding (at the beginning, I wanted my page to work properly in offline too). After a little effort to learn React, I ended up coding my page with jQuery first.
                     I host my page through Github, but interestingly I did not use Jekyll (in order to implement more detailed designs).
                 </p>
             </section>
@@ -179,7 +179,7 @@
                 <h3 class='kor'>사이트 구성</h3>
                 <h3 class='eng'>Sitemap</h3>
                 <p class='kor'>
-                    요약하면, 나는 블로그가 포함된 개인페이지를 제작했다.
+                    결과적으로, 나는 블로그가 포함된 개인페이지를 제작했다.
                     현재 버전은 <a href='about.html?lang=kor'>소개</a>, <a href='resume.html?lang=kor'>이력</a>, <a href='posts.html?lang=kor'>글</a>, <a href='contact.html?lang=kor'>연락</a>을 위한 페이지들을 담고 있다. 
                     그 중 소개 페이지와 이력 페이지가 나를 소개하는 페이지이다. 이력 페이지에는 학술적인 정보들을 담았고, 소개 페이지에는 개인적인 소개들을 담았다. 소개 페이지에는 개성적인 디자인인 신경썼고, 이력 페이지는 정보를 명확하게 전달하는 데에 집중했다.
                 </p>
@@ -194,9 +194,9 @@
                 <p class='eng'>
                     It was stressful but fun to make the name and logo of my page. After a little effort, I ended up with naming my page simply by 'Jai Hyun Park' since it is not only for blog but also for introducing myself. I also designed the logo based on my name. The two figures below are the logo and favicon of my page respectively.
                 </p>
-                <div style='width:80%;max-width:550px;display:flex;justify-items:center;align-items: center;margin:30px auto;margin-bottom:80px'>
-                    <img src='/assets/icons/logo-inverted.png' style='width:48%;background-color: black;'>
-                    <img src='/assets/icons/logo-fill.png' style='width:48%'>
+                <div class='flex-block' style='display:flex;width:85%;max-width:550px;margin:30px auto;margin-bottom:80px'>
+                    <img src='/assets/icons/logo-inverted.png' style='width:90%;max-width:260px;background-color: black;margin:15px auto!important;'>
+                    <img src='/assets/icons/logo-fill.png' style='width:90%;max-width:260px;margin:15px auto!important;'>
                 </div>
             </section>
 
@@ -219,7 +219,7 @@
                     어떻게 쓸지 역시 여전히 구상 중이다. 
                     현재는 <a href='tags.html'>tag</a>를 이용하여 포스트를 관리하는데, 만약 전공들도 업데이트한다면 더 효율적인 방법이 필요할 것이다. 
                     다양한 레이아웃들도 고안하고 싶다. 현재는 markdown 이상의 디자인적 요소가 들어가지 않는다. 
-                    그 외에도 더 다양한 툴들을 익히고 있는 중이다. (MathJax, KaTex, Disqus 등)
+                    그 외에도 더 다양한 툴들을 익히고 있는 중이다 (MathJax, KaTex, Disqus 등).
                 </p>
                 <p class='eng'>
                     Another issue is how to write and organize the postings.
@@ -240,11 +240,11 @@
                     <p class='description kor'>-</p></li>
             </ul>
         </section> -->
+        <div class='load-post-footer wide-piece'></div>
     </div>
 
     <!-- footer -->
     <footer class='post-footer' id='post-footer'>
-        <div class='load-post-footer wide-piece'></div>
         <div class='wide-piece' id="disqus_thread"></div>
         <div class="_track load-footer" id='footer'></div>
     </footer>
