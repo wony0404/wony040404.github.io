@@ -73,23 +73,27 @@ SOFTWARE.
     font-family: 'noto-eng-ii';
     font-weight: normal;
     font-style: normal;
-    src:url('/assets/fonts/noto-sans/NotoSans-ExtraLight.ttf');
+    src:url('/assets/fonts/poppins/Poppins-ExtraLight.ttf');
+    /* src:url('/assets/fonts/noto-sans/NotoSans-ExtraLight.ttf'); */
 }
 @font-face {
     font-family: 'noto-eng-i';
-    src:url('/assets/fonts/noto-sans/NotoSans-Light.ttf');
+    /* src:url('/assets/fonts/noto-sans/NotoSans-Light.ttf'); */
+    src:url('/assets/fonts/poppins/Poppins-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng';
-    src:url('/assets/fonts/noto-sans/NotoSans-Regular.ttf');
+    /* src:url('/assets/fonts/noto-sans/NotoSans-Regular.ttf'); */
+    src:url('/assets/fonts/poppins/Poppins-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'noto-eng-b';
-    src:url('/assets/fonts/noto-sans/NotoSans-Bold.ttf');
+    /* src:url('/assets/fonts/noto-sans/NotoSans-Bold.ttf'); */
+    src:url('/assets/fonts/poppins/Poppins-Bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -164,7 +168,7 @@ footer * {position: relative}
     position:absolute;
     bottom:80px;
     left:70px;
-    color:#ffffe4;
+    color:white;
     display:flex;
     width:900px;
 }
@@ -174,14 +178,14 @@ footer * {position: relative}
     display:inline-block;
     text-align:center;
     text-decoration: none;
-    font-family:'noto-eng-b','noto-kor-b';
+    font-family:'noto-eng-ii','noto-kor-ii';
     word-break: keep-all;
     font-size:50pt;
     margin:auto;
 }
 ._profile > p{
     position:relative;
-    border-left:#eaeae1 3px solid;
+    border-left:#eaeae1 1px solid;
     padding:0;
     margin:auto;
     margin-left:50px;
@@ -207,7 +211,7 @@ footer ._footer-line{
     text-align:center;
 }
 footer ._footer-line h1{
-    font-family: 'noto-eng','noto-kor';
+    font-family: 'noto-eng-i','noto-kor-i';
     font-size: 10pt!important;
     color: white;
     text-align: center;
@@ -238,7 +242,7 @@ footer ._footer-line a:hover{
     transition: 0.4s ease-in-out;
 }
 footer ._footer-line p{
-    font-family: 'noto-eng-i','noto-kor-i';
+    font-family: 'noto-eng-ii','noto-kor-ii';
     font-size: 8pt;
     color: white;
     text-align: center;
@@ -291,9 +295,9 @@ footer ._goto-top:hover {
 }
 .menubar .right-menu a {
     margin:auto;
-    font-family: 'noto-eng','noto-kor';
-    font-size: 12pt;
-    color:#ffffea;
+    font-family: 'noto-eng-ii','noto-kor-ii';
+    font-size: 14pt;
+    color:white;
     transition:0.2s ease-in-out;
     text-decoration: none;
 }
@@ -572,7 +576,7 @@ footer ._goto-top:hover {
         padding: 5px;
         display:block;
         border-radius:10px;
-        background-color: rgba(255,255,244,0.9);
+        background-color: rgba(255,255,255,0.9);
         display:none;
     }
     .menubar .right-menu .right-menu-dropmenu div{
@@ -584,7 +588,8 @@ footer ._goto-top:hover {
         text-align: center;
     }
     .menubar .right-menu .right-menu-dropmenu a {
-        color:rgb(42,42,35);
+        /* color:rgb(42,42,35); */
+        color:rgb(42,42,42);
     }
     .menubar .right-menu .right-menu-button{
         position:relative;
@@ -622,7 +627,7 @@ footer ._goto-top:hover {
     ._profile > p{
         width: 75%;
         border: none;
-        border-top:#eaeae1 3px solid;
+        border-top:white 1px solid;
         margin:auto;
         padding:0;
         margin-top:15px;

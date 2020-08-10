@@ -34,7 +34,7 @@
 // SOFTWARE.
 //
 
-var versionUpdate='0.3.1';
+var versionUpdate='0.3.2';
 var num_rows = 5;
 var activeSection;
 var lang = 'eng';
