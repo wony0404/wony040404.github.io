@@ -185,7 +185,7 @@ footer * {position: relative}
 }
 ._profile > p{
     position:relative;
-    border-left:#eaeae1 1px solid;
+    border-left:white 1px solid;
     padding:0;
     margin:auto;
     margin-left:50px;
@@ -295,8 +295,8 @@ footer ._goto-top:hover {
 }
 .menubar .right-menu a {
     margin:auto;
-    font-family: 'noto-eng-ii','noto-kor-ii';
-    font-size: 14pt;
+    font-family: 'noto-eng-i','noto-kor-i';
+    font-size: 12pt;
     color:white;
     transition:0.2s ease-in-out;
     text-decoration: none;
