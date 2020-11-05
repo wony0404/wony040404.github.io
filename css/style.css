@@ -38,15 +38,20 @@ SOFTWARE.
     font-family: 'noto-kor-ii';
     font-weight: normal;
     font-style: normal;
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff2') format('woff2'),
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff2') format('woff2'),
+    url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff') format('woff'),
+    url('/assets/fonts/noto-kor-min/NotoSansKR-Light.otf') format('opentype');
+
+
+    /* src:url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff2') format('woff2'),
         url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.woff') format('woff'),
-        url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.otf') format('opentype');
+        url('/assets/fonts/noto-kor-min/NotoSansKR-Thin.otf') format('opentype'); */
 }
 @font-face {
     font-family: 'noto-kor-i';
-    src:url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff2') format('woff2'),
-        url('/assets/fonts/noto-kor-min/NotoSansKR-Light.woff') format('woff'),
-        url('/assets/fonts/noto-kor-min/NotoSansKR-Light.otf') format('opentype');
+    src:url('/assets/fonts/noto-kor-min/NotoSansKR-DemiLight.woff2') format('woff2'),
+    url('/assets/fonts/noto-kor-min/NotoSansKR-DemiLight.woff') format('woff'),
+    url('/assets/fonts/noto-kor-min/NotoSansKR-DemiLight.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
