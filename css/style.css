@@ -142,7 +142,7 @@ footer * {position: relative}
     font-family: 'noto-eng-i','noto-kor-i';
     font-size: 11pt;
     text-align: center;
-    color: #ffffe4;
+    color: #ffffff;
     background: rgba(0,0,0,0);
     cursor: pointer;
     transition:0.2s ease-in-out;
