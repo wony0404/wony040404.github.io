@@ -724,7 +724,7 @@ footer ._goto-top:hover {
 .post-section a, .post-subsection a {padding-bottom:0;margin-bottom:0;display:inline-block;color:inherit;font-size:inherit;font-family:inherit;text-decoration: none;border-bottom: dashed 1pt rgba(0,0,0,0.6)} */
 
 .post-body{width:100%}
-.post-body, .post-body *{position:relative;display:block;text-decoration:none;font-size:12pt;font-family:'noto-eng','noto-kor';line-height:1.7;text-align:left;padding:0;margin:0 auto;color:black}
+.post-body, .post-body *{position:relative;display:block;text-decoration:none;font-size:12pt;font-family:'noto-eng','noto-kor';line-height:1.7;text-align:justify;padding:0;margin:0 auto;color:black}
 .post-body a {display:inline-block;font-size:inherit;font-family:inherit;color:inherit;border-bottom: dashed 1pt rgba(0,0,0,0.6)}
 .post-body b {display:inline-block;font-size:inherit;font-family:'noto-eng-b','noto-kor-b'}
 .post-body section{margin:50px auto}
