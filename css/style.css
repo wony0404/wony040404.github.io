@@ -218,6 +218,8 @@ footer ._footer-line{
 footer ._footer-line h1{
     font-family: 'noto-eng-i','noto-kor-i';
     font-size: 10pt!important;
+    letter-spacing: 1px;
+    word-spacing: 2px;
     color: white;
     text-align: center;
     position: relative;

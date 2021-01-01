@@ -34,7 +34,7 @@
 // SOFTWARE.
 //
 
-var versionUpdate='1.0.0';
+var versionUpdate='1.0.2';
 var num_rows = 5;
 var activeSection;
 var lang = 'eng';
@@ -224,7 +224,7 @@ function lastUpdated(){
 		$('.update-time').text('Last updated on ' + s);
 	}
 	if($('.current-version').length){
-		$('.current-version').text('Ver.' + versionUpdate);
+		$('.current-version').text('Version ' + versionUpdate);
 	}
 }
 
