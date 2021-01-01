@@ -208,18 +208,14 @@ footer ._footer-line{
     padding:0!important;
     /* left:50%;
     transform: translateX(-50%); */
-    margin-bottom:30px;
-    margin-top:40px;
-    margin-bottom:50px;
-    margin-top:70px;
+    margin-bottom:60px;
+    margin-top:80px;
     /* top: 50px; */
     text-align:center;
 }
 footer ._footer-line h1{
     font-family: 'noto-eng-i','noto-kor-i';
     font-size: 10pt!important;
-    letter-spacing: 1px;
-    word-spacing: 2px;
     color: white;
     text-align: center;
     position: relative;
