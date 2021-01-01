@@ -214,9 +214,9 @@ SOFTWARE.
                     생각보다 성능이 만족스럽지 않았는데, 기록해두진 않았지만 정확도가 50~60% 정도 되었던 것 같다. (당시엔 AUC는 따로 측정하지 않았다)
                 </p>
                 <p class='eng'>
-                    I decided to participate in August. In mid-August, I looked at the task and datasets, and at the end of August, I implemented a naive method using logistic regression and shared it with my team member.
-                    Since the task is a multi-label problem, I perform logistic regression method to each label and predict the type of tumors by aggregating the results of logistic regression methods.
-                    To be honest, the performance was not as satisfactory as I expected; I didn't record it, but I think the accuracy was about 50 to 60% (I did not measure the micro AUC at that time).
+                    I decided to participate in August. In mid-August, I looked at the task and datasets, and by the end of August, I implemented a naive method using logistic regression and shared it with my team members.
+                    Since the task was a multi-label problem, I performed logistic regression method to each label and predict the type of tumors by aggregating the results from each logistic regression method.
+                    To be honest, the performance was not as satisfactory as I expected; I didn't record it, but I remember the accuracy was about 50 to 60% (I did not measure the micro AUC at that time).
                 </p>
 
                 <h6 class='kor'>더 좋은 알고리즘을 찾아서</h6>
@@ -227,11 +227,11 @@ SOFTWARE.
                     마침내 10월 중순 즈음에 1차적으로 알고리즘을 확정지었다. 
                     내 팀의 1차 알고리즘은 학습단계에서 클러스터 기법을 이용해 유전자 복제수 (copy number) 정보 중 유의미한 항목들을 추려냈고, 
                     추려낸 항목들을 이용해 깊이 1인 뉴럴 네트워크를 학습했다. 
-                    추론단계에서는 해당 항목들의 정보를 참고해 학습한 깊이1 뉴럴 네트워크를 추론했다 (즉, 행렬곱 1회를 했다).
+                    추론단계에서는 해당 항목들의 정보를 참고해 학습한 깊이1 뉴럴 네트워크를 이용해 추론했다 (즉, 행렬곱 1회를 했다).
                     이 때의 micro-AUC 값은 0.93 언저리였다. 
                 </p>
                 <p class='eng'>
-                    Since September, I and my team has explored related studies and exprimented more various methods.
+                    Since September, I and my team have explored related studies and exprimented with more diverse methods.
                     We conducted extensive experiments not only on logistic regression but also on the neural network.
                     Finally, around mid-October, the algorithm was first confirmed.
                     In the learning phase, my team's primary algorithm exploited the cluster analysis to extract genes with the meaningful copy number.
@@ -251,12 +251,12 @@ SOFTWARE.
                     (개인적으로 성능이 좋아진 이유를 아직도 정확히 이해하지 못하고 있는데, 불필요한 중복 데이터가 제거되어 그렇다고 받아들이고 있다).
                 </p>
                 <p class='eng'>
-                    The fun point here is that the cluster analysis improves both speed and performance. 
-                    This idea is basically from the related researches
+                    The fun point here was that the cluster analysis has improved both speed and performance. 
+                    This idea was basically from the related researches
                     (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1334-9">link1</a>, 
                     <a href="https://www.nature.com/articles/s41598-019-53989-3">link2</a>). 
                     Since the copy number was almost identical in the neighboring genes, the cluster technique had the effect of erasing the redundant information. 
-                    This had made the algorithm faster and more accurate substantially 
+                    This has made the algorithm faster and way more accurate 
                     (Frankly, I still don't understand exactly why the performance have been improved; I just think it as a positive outcome from the removal of unnecessary redundant data).
                 </p>
 
