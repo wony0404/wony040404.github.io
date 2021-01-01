@@ -532,12 +532,19 @@ footer ._goto-top:hover {
     margin:auto 40px;
 }
 
+.grid-2-1-ul {
+    width:100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+
 .grid-3-2-ul,
 .grid-3-1-ul {
     width:100%;
     display:grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
 }
+.grid-2-1-ul > li,
 .grid-3-2-ul > li{
     margin:0;
 }
@@ -566,6 +573,7 @@ footer ._goto-top:hover {
 
 .fixed {position:fixed;z-index:0}
 @media screen and (max-width: 700px) {
+    .grid-2-1-ul,
     .grid-3-1-ul {
         display:block!important;
     }
@@ -675,6 +683,9 @@ footer ._goto-top:hover {
         text-align:center!important;
     }
 
+    .grid-2-1-ul {
+        display: block!important;
+    }
     .grid-3-2-ul,
     .grid-3-1-ul {
         display:grid;
