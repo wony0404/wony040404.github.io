@@ -214,8 +214,8 @@ footer ._footer-line{
     text-align:center;
 }
 footer ._footer-line h1{
-    font-family: 'noto-eng-i','noto-kor-i';
-    font-size: 10pt!important;
+    font-family: 'noto-eng-ii','noto-kor-ii'!important;
+    font-size: 9pt!important;
     color: white;
     text-align: center;
     position: relative;
@@ -225,6 +225,8 @@ footer ._footer-line h1{
 }
 footer ._footer-line a{
     margin:auto;
+    font-family: 'noto-eng-ii','noto-kor-ii'!important;
+    font-size: 9pt!important;
     /* font-family: 'noto-eng-i','noto-kor-i'; */
     /* font-weight: 600; */
     /* font-size: 11pt; */
