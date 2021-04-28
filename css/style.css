@@ -800,7 +800,7 @@ footer ._goto-top:hover {
 .load-posts > li p {font:inherit}
 .load-posts > li .post-title {margin:0px 0px!important;padding:0!important;color:black!important;font-family:'noto-eng-b','noto-kor-b'!important;font-size:15pt}
 .load-posts > li .post-title:hover {text-decoration:underline;}
-.load-posts > li .post-publish {margin:2px 2px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii';font-size:8pt}
+.load-posts > li .post-publish,.load-num-cmts {margin:2px 5px!important;padding:0!important;color:black!important;font-family:'noto-eng-ii','noto-kor-ii'!important;font-size:10pt!important}
 .load-posts > li .post-abstract {margin:10px 0px!important;padding:0!important;color:black!important;width:100%!important;font-family:'noto-eng','noto-kor';font-size:11pt;overflow:hidden;word-break:break-all}
 .load-posts > li .post-keywords {position:relative;list-style-type:none;margin:0px;padding:0;width:100%;display:inline-block}
 .load-posts > li .post-keyword {position:relative;background-color:rgba(200,200,200,0.5);border-radius:5px;padding:0px 3px;padding-bottom:2px;margin:0px 0px;margin-bottom:10px;display:inline-block;border:none}

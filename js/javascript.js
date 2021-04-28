@@ -465,3 +465,4 @@ function refreshPostsList(that, pageCount, numPages) {
 // 		});
 // 	});
 // }
+
