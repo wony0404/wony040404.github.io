@@ -159,6 +159,12 @@ SOFTWARE.
     font-family: 'noto-eng-i','noto-kor-i';font-size: 10pt;
     text-align: left!important;
 }
+.detail-ul .description > ul {list-style-type:circle;list-style-position:outside;margin-left:15pt!important}
+.detail-ul .description > ul > li {display:list-item!important; width:100%;margin-bottom:3pt}
+.detail-ul .description > ul > li > div{display:flex}
+.detail-ul .description > ul > li h1 {font-size:10pt;font-family:'noto-eng-i','noto-kor-i'!important;font-weight:normal;width:65%;text-align:left!important}
+.detail-ul .description > ul > li p {font-size:10pt;font-family:'noto-eng-ii','noto-kor-ii'!important;width:35%;text-align:right!important}
+
 @media screen and (max-width: 1000px) {
     .detail-ul > li {margin-bottom: 30px}
     .detail-ul .info-tag{width:100%;margin-bottom:5px}
@@ -354,6 +360,34 @@ SOFTWARE.
                 <h1 class='eng'>Work Experience</h1>
                 <h1 class='kor'>경력</h1>
                 <ul class='detail-ul'>
+
+                    <li class='flex-block'>
+                        <div class='info-tag'>
+                            <h1 class='eng'>Teaching Assistant</h1>
+                            <h1 class='kor'>조교 활동</h1>
+                            <p>2020.3. - present</p>
+                            <p class='eng'>@Seoul National University, Seoul, Korea</p>
+                            <p class='kor'>@서울대학교, 서울, 한국</p>
+                        </div>
+
+                        <div class='description'>
+                            <ul>
+                                <li><div>
+                                    <h1 class='eng'>Number Theory</h1>
+                                    <h1 class='kor'>정수론</h1>
+                                    <p>2021.3. - 2021.6</p>
+                                </div></li>  
+
+                                <li><div>
+                                    <h1 class='eng'>Differential and Integral Calculus</h1>
+                                    <h1 class='kor'>미적분학 연습</h1>
+                                    <p>2020.3. - present</p>
+                                </div></li>  
+                            </ul>
+                        </div>
+                    </li>
+
+
                     <li class='flex-block'>
                         <div class='info-tag'>
                             <h1 class='eng'>2019 SPIA - Academic Mentor</h1>
@@ -422,7 +456,7 @@ SOFTWARE.
             </div>
 
 
-            <div id='ta' class='big-piece subsection'>
+            <!-- <div id='ta' class='big-piece subsection'>
                 <h1 class='eng'>Teaching Experiences</h1>
                 <h1 class='kor'>교육 활동</h1>
                 <ul class='brief-ul'>
@@ -434,9 +468,10 @@ SOFTWARE.
                         <p class='kor'>@서울대학교</p>
                     </li>  
                 </ul>
-            </div>
+            </div> -->
 
         </section>
+
         
         <section class="_track _content-section _article-section " id = "research">
             <h1 class='eng'>Research</h1>
