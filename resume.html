@@ -71,6 +71,7 @@ SOFTWARE.
     margin-bottom:70px;
     border-bottom:1pt solid rgba(0,0,0,0.4)
 }
+
 ._article-section > p{
     width: 40%;
     left:50%;
@@ -86,6 +87,13 @@ SOFTWARE.
     margin-bottom: 15px;
     display: inline-block;
 }
+._article-section > .subsection > h2 {
+    font-family: 'noto-eng-b','noto-kor-b';
+    text-align:left;font-size:14pt;
+    margin-bottom: 10px;
+    margin-top:20px;
+    display: inline-block;
+}
 ._article-section > .subsection > p {
     font-family: 'noto-eng-i','noto-kor-i';
     text-align:left;font-size:10pt;
@@ -96,6 +104,7 @@ SOFTWARE.
 
 .brief-ul{
     list-style-type: square;
+    list-style-type:decimal;
     list-style-position: outside;
 }
 .brief-ul > li{
@@ -104,7 +113,8 @@ SOFTWARE.
     margin-left:20px;
 }
 .brief-ul > li h1{
-    font-family: 'noto-eng-b','noto-kor-b';
+    /* font-family: 'noto-eng-b','noto-kor-b'; */
+    font-family: 'noto-eng-i','noto-kor-i';
     /* font-weight:600; */
     font-size: 12pt;
     margin-bottom:5px;
@@ -246,10 +256,11 @@ SOFTWARE.
             <div class="_toggle"></div>
             
             <ul class="_nav-menu">
-                <li class="experience">Experience</li>
+                <li class="education">Education</li>
                 <li class="research">Research</li>
+                <li class="experience">Experiences</li>
                 <li class="awards">Awards</li>
-                <li class="techniques">Techniques</li>
+                <li class="techniques">Skills</li>
                 <!-- <li class="abilities">Abilities</li> -->
             </ul>
             <div class="_toggle2"></div>
@@ -259,8 +270,8 @@ SOFTWARE.
             <div class="_toggle"></div>
 
             <ul class="_nav-menu">
-                <li class="experience">커리어</li>
                 <li class="research">연구</li>
+                <li class="experience">커리어</li>
                 <li class="awards">수상내역</li>
                 <li class="techniques">기술</li>
             </ul>
@@ -270,15 +281,13 @@ SOFTWARE.
 
         <div class='section-updown'><div class='section-up'>∧</div><div class='section-top'></div><div class='section-down'>∨</div></div>
     
+        
 
+        <section class="_track _content-section _article-section" id = "education" style='background-color:rgba(180,180,230,0.2)'>
+            <h1 class='eng'>Education</h1>
+            <h1 class='kor'>학력</h1>
         
-        <section class="_track _content-section _article-section" id = "experience" style='background-color:rgba(180,180,230,0.2)'>
-            <h1 class='eng'>Experience</h1>
-            <h1 class='kor'>커리어</h1>
-        
-            <div id='education' class='big-piece subsection'>
-                <h1 class='eng'>Education</h1>
-                <h1 class='kor'>학력</h1>
+            <div class='big-piece subsection'>
                 <ul class='detail-ul'>
                     <li class='flex-block'>
                         <div class='info-tag'>
@@ -355,10 +364,128 @@ SOFTWARE.
                     </li>
                 </ul>
             </div>
+        </section>
 
+
+        <section class="_track _content-section _article-section " id = "research">
+            <h1 class='eng'>Research</h1>
+            <h1 class='kor'>연구</h1>
+        
+            <div class = 'big-piece subsection'>
+                <h1 class='eng'>Publications</h1>
+                <h1 class='kor'>출판</h1>
+                <p class='eng'>Authors are listed in alphabetical order by last name, unless an asterisk(*) is indicated.</p>
+                <p class='kor'>저자는 철자순으로 나열했고, 주저자가 있는 경우 별표(*)로 표시했습니다.</p>
+
+                <h2 class='eng'>Conference</h2>
+                <h2 class='kor'>Conference</h2>
+                <ol reversed class='brief-ul'>
+                    <li>
+                        <h1>
+                            Privacy-Preserving Text Classification on BERT Embeddings with Homomorphic Encryption
+                        </h1>
+                        <p class='eng'>*Garam Lee, *Minsoo Kim, *<b>Jai Hyun Park</b>, Seungwon Hwang, Jung Hee Cheon</p>
+                        <p class='kor'>*이가람, *김민수, *<b>박재현</b>, 황승원, 천정희</p>
+                        <p>To be appeared in NAACL 2022 (short)</p>
+                    </li>
+                    <li>   
+                        <h1>
+                            Towards a Practical Cluster Analysis over Encrypted Data<a href='http://eprint.iacr.org/2019/465' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <p class='eng'>Jung Hee Cheon, Duhyeong Kim, <b>Jai Hyun Park</b></p>
+                        <p class='kor'>김두형, <b>박재현</b>, 천정희</p>
+                        <p>In International Conference on Selected Areas in Cryptography (SAC), pp. 227-249. Springer, Cham, 2019</p>
+                    </li>  
+                </ol>
+
+                <h2 class='eng'>Journal</h2>
+                <h2 class='kor'>Journal</h2>
+                <ol reversed class='brief-ul'>
+                    <li>
+                        <h1>
+                            Efficient verifiable computation over quotient polynomial rings<a href='https://eprint.iacr.org/2022/280' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <p class='eng'>*<b>Jai Hyun Park</b>, Jung Hee Cheon, Dongwoo Kim</p>
+                        <p class='kor'>*<b>박재현</b>, 천정희, 김동우</p>
+                        <p>Internationl Journal of Information Security, 2022</p>
+                    </li>
+                    <li>   
+                        <h1>
+                            Secure tumor classification by shallow neural network using homomorphic encryption<a href='https://trebuchet.public.springernature.app/get_content/4b1b9674-eda5-4f7f-bfb2-565dbb8a0a9d' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <p class='eng'>*Seungwan Hong, <b>Jai Hyun Park</b>, Wonhee Cho, Hyeongmin Choe, Jung Hee Cheon</p>
+                        <p class='kor'>*홍승완, <b>박재현</b>, 조원희, 최형민, 천정희</p>
+                        <p>BMC Genomics, 23.1: 1-19, 2022</p>
+                    </li>  
+                    <li>
+                        <h1 class='eng'>
+                            Robust Image Fusion Using Stationary Wavelet Transform<a href='http://koreascience.or.kr/article/JAKO201105462029416.page' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <h1 class='kor'>
+                            정상 웨이블렛 변환을 이용한 로버스트 영상 융합<a href='http://koreascience.or.kr/article/JAKO201105462029416.page' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <p class='eng'>*Hee Hoon Kim, Seung Hyo Kang, <b>Jai Hyun Park</b>, Hyun Ho Ha, Jin soo Lim, Dong Hoon Lim</p>
+                        <p class='kor'>*김희훈, 강승효, <b>박재현</b>, 하현호, 임진수, 임동훈</p>
+                        <p class='eng'>@The Korean Journal of Applied Statistics, vol.24, no.6, pp.1181-1196, 2011</p>
+                        <p class='kor'>@한국통계학회 응용통계연구지, vol.24, no.6, pp.1181-1196, 2011</p>
+                    </li>    
+                </ol>
+
+
+                <h2 class='eng'>Manuscript</h2>
+                <h2 class='kor'>Manuscript</h2>
+                <ol reversed class='brief-ul'>
+                    <li>
+                        <h1>
+                            Efficient Homomorphic Evaluation on Large Intervals <a href='https://eprint.iacr.org/2022/280' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
+                        </h1>
+                        <p class='eng'>Jung Hee Cheon, Wootae Kim, <b>Jai Hyun Park</b></p>
+                        <p class='kor'>김우태, <b>박재현</b>, 천정희</p>
+                        <p>Preprint</p>
+                    </li>
+                </ol>
+                
+            </div>
+
+
+            <div class = 'big-piece subsection'>
+                <h1 class='eng'>Presentations</h1>
+                <h1 class='kor'>발표</h1>
+
+                <ul class='brief-ul'>
+                    <li>   
+                        <h1>Polynomial Approximation on Wide Domain and Logistic Regression over Encrypted Data</h1>
+                        <p class='eng'>@2020 KMS Annual Meeting in Online | 2020.10.24.</p>
+                        <p class='kor'>@2020 대한수학회 가을 연구발표회, 온라인 | 2020.10.24. </p>
+                    </li>  
+
+                    <li>   
+                        <h1>Towards a Practical Cluster Analysis over Encrypted Data</h1>
+                        <!-- <p class='eng'>Hong-ik Univ., Seoul, Korea | 2019.10.26.</p>
+                        <p class='kor'>홍익대학교, 서울, 한국 | 2019.10.26.</p> -->
+                        <p class='eng'>@2019 KMS Annual Meeting in Hong-ik University, Seoul, Korea | 2019.10.26</p>
+                        <p class='kor'>@2019 대한수학회 가을 연구발표회, 홍익대학교, 서울, 한국 | 2019.10.26</p>
+                        <p class='eng'>@2019 Selected Areas in Cryptography (SAC) in University of Waterloo, Toronto, Canada | 2019.8.14.</p>
+                        <p class='kor'>@2019 Selected Areas in Cryptography (SAC), 워털루대학교, 토론토, 캐나다 | 2019.8.14.</p>
+
+                    </li>  
+                    <!-- <li>   
+                        <h1>Towards a Practical Cluster Analysis over Encrypted Data</h1>
+                        <p class='eng'>Univ. of Waterloo, Toronto, Canada | 2019.8.14.</p>
+                        <p class='kor'>워털루대학교, 토론토, 캐나다 | 2019.8.14.</p>
+                        <p>@2019 Selected Areas in Cryptography</p>
+                    </li>   -->
+                </ul>
+            </div>
+        </section>
+
+
+        
+        <section class="_track _content-section _article-section" id = "experience" style='background-color:rgba(180,180,230,0.2)'>
+            <h1 class='eng'>Experiences</h1>
+            <h1 class='kor'>커리어</h1>
+        
             <div id='careers' class='big-piece subsection'>
-                <h1 class='eng'>Work Experience</h1>
-                <h1 class='kor'>경력</h1>
                 <ul class='detail-ul'>
 
                     <li class='flex-block'>
@@ -472,104 +599,6 @@ SOFTWARE.
 
         </section>
 
-        
-        <section class="_track _content-section _article-section " id = "research">
-            <h1 class='eng'>Research</h1>
-            <h1 class='kor'>연구</h1>
-        
-            <div class = 'big-piece subsection'>
-                <h1 class='eng'>Publications</h1>
-                <h1 class='kor'>출판</h1>
-                <p class='eng'>Authors are listed in alphabetical order by last name, unless an asterisk(*) is indicated.</p>
-                <p class='kor'>저자는 철자순으로 나열했고, 주저자가 있는 경우 별표(*)로 표시했습니다.</p>
-                <ul class='brief-ul'>
-                    <li>
-                        <h1>
-                            Efficient verifiable computation over quotient polynomial rings
-                        </h1>
-                        <p class='eng'>*<b>Jai Hyun Park</b>, Jung Hee Cheon, Dongwoo Kim</p>
-                        <p class='kor'>*<b>박재현</b>, 천정희, 김동우</p>
-                        <p>Internationl Journal of Information Security, 2022</p>
-                    </li>
-                    <li>
-                        <h1>
-                            Privacy-Preserving Text Classification on BERT Embeddings with Homomorphic Encryption
-                        </h1>
-                        <p class='eng'>*Garam Lee, *Minsoo Kim, *<b>Jai Hyun Park</b>, Seungwon Hwang, Jung Hee Cheon</p>
-                        <p class='kor'>*이가람, *김민수, *<b>박재현</b>, 황승원, 천정희</p>
-                        <p>To be appeared in NAACL 2022 (short)</p>
-                    </li>
-                    <li>
-                        <h1>
-                            Efficient Homomorphic Evaluation on Large Intervals <a href='https://eprint.iacr.org/2022/280' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                        </h1>
-                        <p class='eng'>Jung Hee Cheon, Wootae Kim, <b>Jai Hyun Park</b></p>
-                        <p class='kor'>김우태, <b>박재현</b>, 천정희</p>
-                        <p>Preprint</p>
-                    </li>
-                    <li>   
-                        <h1>
-                            Secure tumor classification by shallow neural network using homomorphic encryption<a href='https://trebuchet.public.springernature.app/get_content/4b1b9674-eda5-4f7f-bfb2-565dbb8a0a9d' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                        </h1>
-                        <p class='eng'>*Seungwan Hong, <b>Jai Hyun Park</b>, Wonhee Cho, Hyeongmin Choe, Jung Hee Cheon</p>
-                        <p class='kor'>*홍승완, <b>박재현</b>, 조원희, 최형민, 천정희</p>
-                        <p>BMC Genomics, 23.1: 1-19, 2022</p>
-                    </li>  
-                    <li>   
-                        <h1>
-                            Towards a Practical Cluster Analysis over Encrypted Data<a href='http://eprint.iacr.org/2019/465' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                        </h1>
-                        <p class='eng'>Jung Hee Cheon, Duhyeong Kim, <b>Jai Hyun Park</b></p>
-                        <p class='kor'>김두형, <b>박재현</b>, 천정희</p>
-                        <p>In International Conference on Selected Areas in Cryptography (SAC), pp. 227-249. Springer, Cham, 2019</p>
-                    </li>  
-
-                    <li>
-                        <h1 class='eng'>
-                            Robust Image Fusion Using Stationary Wavelet Transform<a href='http://koreascience.or.kr/article/JAKO201105462029416.page' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                        </h1>
-                        <h1 class='kor'>
-                            정상 웨이블렛 변환을 이용한 로버스트 영상 융합<a href='http://koreascience.or.kr/article/JAKO201105462029416.page' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
-                        </h1>
-                        <p class='eng'>*Hee Hoon Kim, Seung Hyo Kang, <b>Jai Hyun Park</b>, Hyun Ho Ha, Jin soo Lim, Dong Hoon Lim</p>
-                        <p class='kor'>*김희훈, 강승효, <b>박재현</b>, 하현호, 임진수, 임동훈</p>
-                        <p class='eng'>@The Korean Journal of Applied Statistics, vol.24, no.6, pp.1181-1196, 2011</p>
-                        <p class='kor'>@한국통계학회 응용통계연구지, vol.24, no.6, pp.1181-1196, 2011</p>
-                    </li>    
-                </ul>
-            </div>
-
-            <div class = 'big-piece subsection'>
-                <h1 class='eng'>Presentations</h1>
-                <h1 class='kor'>발표</h1>
-
-                <ul class='brief-ul'>
-                    <li>   
-                        <h1>Polynomial Approximation on Wide Domain and Logistic Regression over Encrypted Data</h1>
-                        <p class='eng'>@2020 KMS Annual Meeting in Online | 2020.10.24.</p>
-                        <p class='kor'>@2020 대한수학회 가을 연구발표회, 온라인 | 2020.10.24. </p>
-                    </li>  
-
-                    <li>   
-                        <h1>Towards a Practical Cluster Analysis over Encrypted Data</h1>
-                        <!-- <p class='eng'>Hong-ik Univ., Seoul, Korea | 2019.10.26.</p>
-                        <p class='kor'>홍익대학교, 서울, 한국 | 2019.10.26.</p> -->
-                        <p class='eng'>@2019 KMS Annual Meeting in Hong-ik University, Seoul, Korea | 2019.10.26</p>
-                        <p class='kor'>@2019 대한수학회 가을 연구발표회, 홍익대학교, 서울, 한국 | 2019.10.26</p>
-                        <p class='eng'>@2019 Selected Areas in Cryptography (SAC) in University of Waterloo, Toronto, Canada | 2019.8.14.</p>
-                        <p class='kor'>@2019 Selected Areas in Cryptography (SAC), 워털루대학교, 토론토, 캐나다 | 2019.8.14.</p>
-
-                    </li>  
-                    <!-- <li>   
-                        <h1>Towards a Practical Cluster Analysis over Encrypted Data</h1>
-                        <p class='eng'>Univ. of Waterloo, Toronto, Canada | 2019.8.14.</p>
-                        <p class='kor'>워털루대학교, 토론토, 캐나다 | 2019.8.14.</p>
-                        <p>@2019 Selected Areas in Cryptography</p>
-                    </li>   -->
-                </ul>
-            </div>
-        </section>
-
         <section class="_track _content-section _article-section " id = "awards" style='background-color:rgba(180,180,230,0.2)'>
             <h1 class='eng'>Awards</h1>
             <h1 class='kor'>수상내역</h1>
@@ -664,7 +693,7 @@ SOFTWARE.
         </section>
     
         <section class="_track _content-section _article-section " id = "techniques">
-            <h1 class='eng'>Techniques</h1>
+            <h1 class='eng'>Skills</h1>
             <h1 class='kor'>기술</h1>
         
             <div class = 'big-piece subsection'>
@@ -676,9 +705,9 @@ SOFTWARE.
                     <li><h1>LaTeX</h1><p>★★★★☆</p></li>  
                     <li><h1>HTML/CSS</h1><p>★★★☆☆</p></li>  
                     <li><h1>Git</h1><p>★★★☆☆</p></li>  
-                    <li><h1>Javascript/jQuery</h1><p>★★☆☆☆</p></li>  
-                    <li><h1>Java</h1><p>★★☆☆☆</p></li>  
-                    <li><h1>Bash/Shell</h1><p>★☆☆☆☆</p></li>  
+                    <!-- <li><h1>Javascript/jQuery</h1><p>★★☆☆☆</p></li>   -->
+                    <!-- <li><h1>Java</h1><p>★★☆☆☆</p></li>   -->
+                    <!-- <li><h1>Bash/Shell</h1><p>★☆☆☆☆</p></li>   -->
                 </ul>
             </div>
             <div class = 'big-piece subsection'>
@@ -686,7 +715,7 @@ SOFTWARE.
                 <h1 class='kor'>언어</h1>
                 <ul class='grid-2-1-ul abilities-ul'>
                     <li class='kor'><h1>한국어</h1><p>★★★★★</p></li>  
-                    <li class='eng'><h1>Korean (Mother tongue)</h1><p>★★★★★</p></li>  
+                    <li class='eng'><h1>Korean (Native)</h1><p>★★★★★</p></li>  
                     <li class='kor'><h1>영어</h1><p>★★★★☆</p></li>  
                     <li class='eng'><h1>English (Fluent)</h1><p>★★★★☆</p></li>  
                 </ul>
