@@ -199,6 +199,13 @@ footer * {position: relative}
     font-size:13pt;
     line-height: 35px;
 }
+._profile > p > a{
+    position:relative;
+    font-family: 'noto-eng-ii','noto-kor-ii';
+    font-size:13pt;
+    line-height: 35px;
+}
+
 
 /* Footer */
 footer ._footer-line{
