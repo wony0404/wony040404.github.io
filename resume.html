@@ -112,6 +112,11 @@ SOFTWARE.
     display: list-item;
     margin-left:20px;
 }
+.brief-ul > li.equal:before{
+    content:  "=";
+    position:absolute;
+    left:-30px;
+}
 .brief-ul > li h1{
     /* font-family: 'noto-eng-b','noto-kor-b'; */
     font-family: 'noto-eng-i','noto-kor-i';
@@ -227,13 +232,14 @@ SOFTWARE.
                 I am an <b>Integrated PhD student</b> at <b>Seoul National University</b>, majoring in <b>mathematical sciences</b>.
                 Currently, I am interested in <b>cryptography</b>: espeically in Homomorphic Encryption and Verifiable Computing.
                 I hold a Bachelor's degree from the Department of Mathematical Sciences at Seoul National University. Here is my 
-                <a href="assets/CV.pdf"><b>CV</b></a>.
+                <a href="assets/CV.pdf"><b>[CV]</b></a>.
             </p>
             <p class='kor'>
                 안녕하세요, 저는 <b>박재현</b>입니다.
                 저는 서울대학교 수리과학부 석박통합과정 재학 중인 <b>대학원생</b>입니다.
                 현재 저는 <b>암호론</b>을 연구 중입니다. 특히 동형암호 및 계산검증에 관심이 있습니다.
                 서울대학교 수리과학부에서 학부를 졸업했습니다.
+                제 <a href="assets/CV.pdf"><b>[CV]</b></a> 입니다.
             </p>
         </div>
 
@@ -375,8 +381,10 @@ SOFTWARE.
             <div class = 'big-piece subsection'>
                 <h1 class='eng'>Publications</h1>
                 <h1 class='kor'>출판</h1>
-                <p class='eng'>Authors are listed in alphabetical order by last name, unless an asterisk(*) is indicated.</p>
-                <p class='kor'>저자는 철자순으로 나열했고, 주저자가 있는 경우 별표(*)로 표시했습니다.</p>
+                <!-- <p class='eng'>Authors are listed in alphabetical order by last name, unless an asterisk(*) is indicated.</p> -->
+                <p class='eng'>I publish in multiple fields, with different standards for ordering authors, some ordering by contribution and others ordering alphabetically. In the list below, first authors are indicated by asterisks(*) when authors are ordered by contribution; the symbol = indicates a paper with alphabetically-ordered authors.</p>
+
+                <p class='kor'>저자는 철자순으로 나열했고(=), 주저자가 있는 경우 별표(*)로 표시했습니다.</p>
 
                 <h2 class='eng'>Conference</h2>
                 <h2 class='kor'>Conference</h2>
@@ -389,7 +397,7 @@ SOFTWARE.
                         <p class='kor'>*이가람, *김민수, *<b>박재현</b>, 황승원, 천정희</p>
                         <p>To be appeared in NAACL 2022 (short)</p>
                     </li>
-                    <li>   
+                    <li class="equal">   
                         <h1>
                             Towards a Practical Cluster Analysis over Encrypted Data<a href='http://eprint.iacr.org/2019/465' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                         </h1>
@@ -445,7 +453,7 @@ SOFTWARE.
                 <h2 class='eng'>Manuscript</h2>
                 <h2 class='kor'>Manuscript</h2>
                 <ol reversed class='brief-ul'>
-                    <li>
+                    <li class="equal">
                         <h1>
                             Efficient Homomorphic Evaluation on Large Intervals <a href='https://eprint.iacr.org/2022/280' style='border:none'><img src='assets/icons/link-open-solid2.png' style='width:15px;height:15px;margin-bottom:3px;margin-left:3px;display:inline-block'/></a>
                         </h1>
