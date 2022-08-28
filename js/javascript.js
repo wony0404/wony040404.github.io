@@ -34,11 +34,10 @@
 // SOFTWARE.
 //
 
-var versionUpdate='1.1.0';
-var num_rows = 5;
-var activeSection;
+var versionUpdate='2.0.0';
 var lang = 'eng';
 var langs = ['eng','kor']
+
 function loadMenubar() {
 	$('.load-menubar').load('default.html #menubar', function(){
 		//Color menu item of current page
@@ -70,10 +69,7 @@ function loadMenubar() {
 		show_lang($(this),lang);
 	});
 }
-function loadPostFooter() {
-	//Click Event: go-to-top
-	$('.load-post-footer').load('default.html #post-footer',function(){show_lang($(this),lang)});
-}
+
 function loadFooter() {
 	//Click Event: go-to-top
 	$('.load-footer').load('default.html #footer', function(){
@@ -87,63 +83,26 @@ function loadFooter() {
 		});
 	});
 }
-function loadPost(that) {
-	var postPath = that.attr('src');
-	if(postPath === undefined)
-		postPath = that.attr('id');
 
-	that.find('.load-post-title').load(postPath +' #post-title', function(){show_lang($(this),lang)});
-	that.find('.load-post-publish').load(postPath +' #post-publish');
-	that.find('.load-post-keywords').load(postPath +' #post-keywords');
-	that.find('.post-link').attr('href', postPath+'?lang='+lang);
-
-	that.find('.show-post-abstract').show();
-	that.find('.load-post-abstract').hide();
-	that.find('.load-post-abstract-after').hide();
-	that.find('.load-post-abstract-after').find('.hide-post-abstract').on('click',function(){
-		$(this).parent().parent().find('.load-post-abstract').hide();
-		$(this).parent().parent().find('.show-post-abstract').show();
-		$(this).parent().hide();
-	});
-	that.find('.show-post-abstract').on('click',function(){
-		$(this).parent().find('.load-post-abstract').load(postPath+' #post-abstract',function(){
-			$(this).show();
-			show_lang($(this),lang);
-		});
-		$(this).parent().find('.load-post-abstract-after').show();
-		$(this).hide();
-	});
-
-	that.show();
-}
-
-// function loadPostsList() {
-// 	$('.load-posts > .load-all-posts > li').each(function(){
-// 		loadPost($(this));
-// 	});
-// }
 function updateAge(){
 	if( $('.update-birth').length > 0 ){
 		var myAge;
-		var birth = new Date(Date.parse('1994 Sep 21 0:0:0 UTC')).getTime();
+		// var birth = new Date(Date.parse('1994 Sep 21 0:0:0 UTC')).getTime();
+		var birth = new Date(Date.parse('1994/9/21')).getTime();
 		setInterval(function(){
 			myAge = new Number(new Date(new Date().getTime() - birth) / (1000 * 60 * 60 * 24 * 365.25)).toFixed(10);
 			$('.update-birth p').text(myAge);
 		}, 100);
 	}
 }
+
 $(document).ready(function()
 {	
 	update_lang();
 
 	loadMenubar();
 	loadFooter();
-	// loadHeader();
-	loadPostFooter();
 	updateAge();
-
-	initializePostLists();
-	listPostsClickEvents();
 
 
 
@@ -397,14 +356,6 @@ function initializePostLists() {
 			loadPost($(this));
 		})
 	});
-
-	// $('.load-recent-posts').each(function(){
-	// 	$(this).load('/posts.html #all-posts > ul > li:lt(3)', function(){
-	// 		$(this).find('li').each(function(){
-	// 			loadPost($(this));
-	// 		})
-	// 	})
-	// });
 }
 
 function listPostsClickEvents() {
@@ -451,18 +402,4 @@ function refreshPostsList(that, pageCount, numPages) {
 	});
 	that.children('div').children('.number').text((pageCount + 1) + '/' + numPages);
 }
-
-// function loadHeader(){
-// 	$('.load-header').each(function(){
-// 		$(this).load($(this).attr('src') + ' #header', function(){
-// 			$(this).find('.tall-header').css({
-// 				'height':'150px',
-// 				'position':'absolute',
-// 				'bottom':'0'
-// 			});
-// 			$(this).find('._profile').children('p').hide();
-// 			$(this).find('._profile').css({'position':'absolute','bottom':'30px','padding-bottom':'0px'});
-// 		});
-// 	});
-// }
 
